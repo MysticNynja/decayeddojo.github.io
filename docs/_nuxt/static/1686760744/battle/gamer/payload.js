@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/battle/gamer", {data:[{}],fetch:{},mutations:void 0});
