@@ -7,7 +7,7 @@
         <!-- Footer Logo End -->
 
         <!-- Text Start -->
-        <p>It long estabhed fact that reader will ditracted the readable content looking using readable.</p>
+        <p>Would you kindly find us on social media.  There are many ways to keep in touch and we tend to be active on all these platforms.</p>
         <!-- Text End -->
 
         <!-- Social Icon List Start -->
@@ -31,19 +31,14 @@
                         className: "icofont-facebook text-white"
                     },
                     {
-                        href: "https://www.dribble.com",
-                        BgShape: "/images/icon/dribble.webp",
-                        className: "icofont-dribbble text-white"
+                        href: "https://www.twitter.com",
+                        BgShape: "/images/icon/twittre.webp",
+                        className: "icofont-twitter text-white"
                     },
                     {
                         href: "https://www.youtube.com",
                         BgShape: "/images/icon/youtobe-bg.webp",
                         className: "icofont-youtube-play text-white"
-                    },
-                    {
-                        href: "https://www.twitter.com",
-                        BgShape: "/images/icon/twittre.webp",
-                        className: "icofont-twitter text-white"
                     }
                 ]
             }

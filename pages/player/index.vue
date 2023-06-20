@@ -9,10 +9,6 @@
 
         <AllPlayers/>
 
-        <CounterUp/>
-
-        <ContactBanner :paddingTop="paddingTop"/>
-
         <Footer/>
 
     </div>
@@ -25,8 +21,6 @@ export default {
         HeaderSection: () => import('@/components/HeaderSection'),
         OffCanvasMobileMenu: () => import('@/components/Header/OffCanvasMobileMenu'),
         Breadcrumb: () => import('@/components/Breadcrumb'),
-        CounterUp: () => import('@/components/CounterUp'),
-        ContactBanner: () => import('@/components/ContactBanner'),
         Footer: () => import('@/components/Footer'),
         AllPlayers: () => import('@/components/AllPlayers')
     },

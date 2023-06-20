@@ -21,7 +21,6 @@ export default {
         OffCanvasMobileMenu: () => import('@/components/Header/OffCanvasMobileMenu'),
         Breadcrumb: () => import('@/components/Breadcrumb'),
         NuxtError: () => import('@/components/NuxtError'),
-        ContactBanner: () => import('@/components/ContactBanner'),
         Footer: () => import('@/components/Footer'),
     },
     data() {

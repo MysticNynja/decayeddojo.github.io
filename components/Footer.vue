@@ -9,9 +9,6 @@
                     <div class="sm:col-span-6 lg:col-span-4">
                         <FooterInfoWidget/>
                     </div>
-                    <div class="sm:col-span-6 lg:col-span-3 mt-10 sm:mt-0">
-                        <FooterContactInfoWidget/>
-                    </div>
                     <div class="sm:col-span-6 lg:col-span-3 mt-10 lg:mt-0">
                         <FooterWinnerWidget/>
                     </div>
@@ -27,7 +24,7 @@
         <div class="bg-gray-800 py-5">
 
             <div class="container flex justify-between relative items-center md:flex-row flex-col-reverse">
-                <p class="text-gray-500 text-sm uppercase font-medium mb-0">© 2021 BONX Made with <i class="icofont-heart text-primary"></i>  by <a href="https://hasthemes.com" class="transition-all hover:text-primary text-white">HasThemes</a></p>
+                <p class="text-gray-500 text-sm uppercase font-medium mb-0">© 2023 with <i class="icofont-heart text-primary"></i>  by <a href="" class="transition-all hover:text-primary text-white">Mystic Designs</a></p>
                 <client-only>
                     <back-to-top class="md:absolute-center position-absolute cursor-pointer z-999 left-3/4 md:left-1/2 mb-15 sm:mb-auto" bottom="auto" right="auto">
                         <img src="/images/icon/scroll-top.webp" alt="">
@@ -53,7 +50,6 @@
     export default {
         components: {
             FooterInfoWidget: () => import('@/components/Footer/FooterInfoWidget'),
-            FooterContactInfoWidget: () => import('@/components/Footer/FooterContactInfoWidget'),
             FooterWinnerWidget: () => import('@/components/Footer/FooterWinnerWidget'),
             FooterMenuList: () => import('@/components/Footer/FooterMenuList')
         },
@@ -62,12 +58,12 @@
                 links: [
                     {
                         contentBefore: "",
-                        pageLink: "/contact",
+                        pageLink: "/terms",
                         linkName: "Terms & Condition"
                     },
                     {
                         contentBefore: "||",
-                        pageLink: "/contact",
+                        pageLink: "/privacy",
                         linkName: "Privacy Policy"
                     }
                 ]

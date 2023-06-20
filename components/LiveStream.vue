@@ -4,26 +4,24 @@
     <div class="container relative">
 
       <CoolLightBox
-        :items="matchesData"
+        :items="streamData"
         :index="index"
         @close="index = null">
       </CoolLightBox>
 
       <swiper class="swiper" :options="swiperOption">
-        <swiper-slide v-for="(match, imageIndex) in matchesData" :key="imageIndex">
+        <swiper-slide v-for="(stream, imageIndex) in streamData" :key="imageIndex">
           <div class="relative">
-            <img class="sm:h-full h-64 w-full object-cover" :src="`${match.gamingBg}`" :alt="match.gamingAlt">
+            <img class="sm:h-full h-64 w-full object-cover" :src="`${stream.gamingBg}`" :alt="stream.gamingAlt">
             <div @click="index = imageIndex" class="absolute-center">
-              <img class="md:w-120 w-20 h-20 md:h-120 cursor-pointer rounded" :src="`${match.playBtnOne}`" :alt="match.playAlt">
+              <img class="md:w-120 w-20 h-20 md:h-120 cursor-pointer rounded" :src="`${stream.playBtnOne}`" :alt="stream.playAlt">
             </div>
-            <div class="absolute md:h-20 h-12 left-1/2 bottom-0 transform -translate-x-2/4 bg-no-repeat bg-center w-full flex justify-center items-center" :style="{backgroundImage: `url(${ match.videoShapeBg })`}">
-              <h3 class="text-white font-exo font-bold uppercase text-base sm:text-xl md:text-2xl">{{ match.shapeTitle }}</h3>
+            <div class="absolute md:h-20 h-12 left-1/2 bottom-0 transform -translate-x-2/4 bg-no-repeat bg-center w-full flex justify-center items-center" :style="{backgroundImage: `url(${ stream.videoShapeBg })`}">
+              <h3 class="text-white font-exo font-bold uppercase text-base sm:text-xl md:text-2xl">{{ stream.shapeTitle }}</h3>
             </div>
           </div>
         </swiper-slide>
       </swiper>
-
-      <!-- Testimonial Arrows -->
 
       <div class="livesection-button-prev swipper-arrow text-white absolute top-2/4 transform -translate-y-2/4 md:w-68 w-55 md:h-55 h-11 bg-cover flex items-center justify-center hover:bg-arrow-hover-shape bg-arrow-shape transition-all 2xl:-left-28 left-3 z-50 cursor-pointer">
         <img class="w-4 h-6" src="/images/icon/navigation-arrow2.webp" alt="">
@@ -41,7 +39,7 @@
   import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
   import '../assets/css/swiper.css';
-  import matchesData from '../data/matches.json'
+  import streamData from '../data/streams.json'
   
   export default {
 
@@ -52,7 +50,7 @@
     },
     data() {
       return {
-        matchesData,
+        streamData,
         swiperOption: {
           slidesPerView: 1,
           spaceBetween: 30,

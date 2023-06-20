@@ -21,24 +21,16 @@
                 title: "Content",
                 links: [
                     {
-                        pageLink: "/about",
-                        className: "Copywriting"
+                        pageLink: "/video",
+                        className: "Videos"
                     },
                     {
-                        pageLink: "/contact",
-                        className: "Social Media"
+                        pageLink: "/podcast",
+                        className: "Podcasts"
                     },
                     {
-                        pageLink: "/contact",
-                        className: "Interactive Media"
-                    },
-                    {
-                        pageLink: "/about",
-                        className: "Motion Design"
-                    },
-                    {
-                        pageLink: "/content",
-                        className: "Illustration"
+                        pageLink: "/stream",
+                        className: "Streams"
                     }
                 ]
             }

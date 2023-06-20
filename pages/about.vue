@@ -9,15 +9,9 @@
 
     <AboutUs/>
 
-    <CounterUp/>
-
     <LiveStream/>
 
     <GamerTeam/>
-
-    <Testimonial/>
-
-    <ContactBanner :paddingTop="paddingTop"/>
 
     <Footer/>
 
@@ -31,11 +25,8 @@ export default {
       OffCanvasMobileMenu: () => import('@/components/Header/OffCanvasMobileMenu'),
       Breadcrumb: () => import('@/components/Breadcrumb'),
       AboutUs: () => import('@/components/AboutUs'),
-      CounterUp: () => import('@/components/CounterUp'),
       LiveStream: () => import('@/components/LiveStream'),
       GamerTeam: () => import('@/components/GamerTeam'),
-      Testimonial: () => import('@/components/Testimonial'),
-      ContactBanner: () => import('@/components/ContactBanner'),
       Footer: () => import('@/components/Footer')
   },
   data() {

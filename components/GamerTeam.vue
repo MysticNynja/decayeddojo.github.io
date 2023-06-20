@@ -29,26 +29,20 @@
         },
         data() {
             return {
-                title: "Meet Gamer Team",
-                text: "When unknown printer took type and scrambled it to make type specimen book centuries",
+                title: "Meet the Players",
+                text: "Too old to die young, and too young for adult diapers",
                 services: [
                     {
                         imgSrc: "/images/others/team1.webp",
                         alt: "Service Image",
-                        name: "Tasia Mancuso",
-                        subtitle: "SEO & Founder",
+                        name: "SxySamurai (Kelly)",
+                        subtitle: "Founder & Resident Angry Dude",
                     },
                     {
                         imgSrc: "/images/others/team2.webp",
                         alt: "Service Image",
-                        name: "Rosaline Emmons",
-                        subtitle: "Team Leader",
-                    },
-                    {
-                        imgSrc: "/images/others/team3.webp",
-                        alt: "Service Image",
-                        name: "Willbarn Beharn",
-                        subtitle: "Team Member"
+                        name: "MysticNynja (Will)",
+                        subtitle: "Founder & Tech Geek",
                     }
                 ]
             }

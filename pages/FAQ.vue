@@ -9,8 +9,6 @@
 
     <FaqAccordion/>
 
-    <ContactBanner :paddingTop="paddingTop"/>
-
     <Footer/>
 
   </div>
@@ -23,7 +21,6 @@ export default {
       OffCanvasMobileMenu: () => import('@/components/Header/OffCanvasMobileMenu'),
       Breadcrumb: () => import('@/components/Breadcrumb'),
       FaqAccordion: () => import('@/components/FaqAccordion'),
-      ContactBanner: () => import('@/components/ContactBanner'),
       Footer: () => import('@/components/Footer')
   },
   data() {

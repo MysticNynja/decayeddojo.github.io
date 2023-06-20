@@ -72,8 +72,6 @@
         </div>
     </div>
 
-    <ContactBanner :paddingTop="paddingTop"/>
-
     <Footer/>
 
   </div>
@@ -89,7 +87,6 @@ export default {
         OffCanvasMobileMenu: () => import('@/components/Header/OffCanvasMobileMenu'),
         Breadcrumb: () => import('@/components/Breadcrumb'),
         BlogListinDetails: () => import('@/components/Blog/BlogListinDetails'),
-        ContactBanner: () => import('@/components/ContactBanner'),
         Footer: () => import('@/components/Footer'),
         Disqus
     },
