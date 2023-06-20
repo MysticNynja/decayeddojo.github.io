@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/match/4", {data:[{}],fetch:{},mutations:void 0});

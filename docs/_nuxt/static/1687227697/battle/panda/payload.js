@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/battle/panda", {data:[{}],fetch:{},mutations:void 0});

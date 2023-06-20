@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/battle/anonymous", {data:[{}],fetch:{},mutations:void 0});
