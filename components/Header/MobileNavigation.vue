@@ -7,18 +7,6 @@
                 </li>
 
                 <li class="menu-item-has-children relative block">
-                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4  border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/">Match</n-link>
-                    <ul class="sub-menu ml-5">
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/match">Match Page</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/match/1">Match Details</n-link>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="menu-item-has-children relative block">
                     <n-link class="text-base font-semibold capitalize block pb-4 pt-4  border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/">Pages</n-link>
                     <ul class="sub-menu ml-5">
                         <li>
@@ -42,41 +30,11 @@
                         <li>
                             <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/404Error">404-Error</n-link>
                         </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/signup">SignUp</n-link>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="menu-item-has-children relative block">
-                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog">Blog</n-link>
-                    <ul class="sub-menu ml-5">
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog-without-sidebar">Blog Without Sidebar Page</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog-right-sidebar">Blog Right Sidebar</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog-left-sidebar">Blog Left Sidebar</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog-grid-right-sidebar">Blog Grid Right Sidebar</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog-grid-left-sidebar">Blog Grid Left Sidebar</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog-grid-without-sidebar">Blog Grid Without Sidebar</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/blog/1">Blog Details</n-link>
-                        </li>
                     </ul>
                 </li>
 
                 <li>
-                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/contact">Contact Us</n-link>
+                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/">Contact Us</n-link>
                 </li>
             </ul>
         </nav>

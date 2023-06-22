@@ -5,6 +5,7 @@
             <div class="flex py-3 items-center justify-between">
                 <HeaderLogo/>
                 <MainMenu/>
+                <SignupButton/>
             </div>
         </div>
     </header>
@@ -16,6 +17,7 @@
         components: {
             HeaderLogo: () => import('@/components/Header/HeaderLogo'),
             MainMenu: () => import('@/components/Header/MainMenu'),
+            SignupButton: () => import('@/components/Button/SignupButton'),
         },
         
         data() {

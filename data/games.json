@@ -1,44 +1,43 @@
 [
     {
-        "gameImage": "/images/others/popular-game-thumb1.webp",
-        "btnName": "Game Details",
-        "title": "Dinosours - Hunter Sniper Shooter",
+        "releaseDate": "Nov 14, 2018",
+        "platform": "PC",
+        "gameImage": "/images/games/Fallout_76/Fallout_76_index.webp",
+        "gameOverview": "This game is fun, but it isn't like other FallOut games",
+        "gameMedia": {
+            "screenshots": [
+                "/images/games/Fallout_76/screenshots/screenshot1.webp",
+                "/images/games/Fallout_76/screenshots/screenshot2.webp",
+                "/images/games/Fallout_76/screenshots/screenshot3.webp"
+            ],
+            "videos": [],
+            "streams": [
+                {
+                    "src": "https://player.twitch.tv/?video=1845785637&parent=www.decayeddojo.com", 
+                    "image":"/images/bg/gaming-bg1.webp", 
+                    "imageAlt": "Fallout 76 Stream", 
+                    "playBtnOne": "/images/others/play-btn.webp",
+                    "playAlt": "Gaming BG",
+                    "videoShapeBg": "/images/others/text-mini-shape.webp",
+                    "shapeTitle": "Watch Fallout 76 Stream"
+                }
+            ]
+        },
+        "btnName": "Enter Appalachia",
+        "title": "Fallout 76",
         "slug": "1",
-        "category": "1"
-    },
-    {
-        "gameImage": "/images/others/popular-game-thumb2.webp",
-        "btnName": "Game Details",
-        "title": "Alien Space Five Star",
-        "slug": "2",
-        "category": "2"
-    },
-    {
-        "gameImage": "/images/others/popular-game-thumb3.webp",
-        "btnName": "Game Details",
-        "title": "Space Adventure - SNIPER SHOOTER",
-        "slug": "3",
-        "category": "3"
-    },
-    {
-        "gameImage": "/images/others/popular-game-thumb4.webp",
-        "btnName": "Game Details",
-        "title": "Space Exploration Game",
-        "slug": "4",
-        "category": "4"
-    },
-    {
-        "gameImage": "/images/others/popular-game-thumb5.webp",
-        "btnName": "Game Details",
-        "title": "Alien Space Seven Star",
-        "slug": "5",
-        "category": "5"
-    },
-    {
-        "gameImage": "/images/others/popular-game-thumb2.webp",
-        "btnName": "Game Details",
-        "title": "Alien Space SNIPER SHOOTER",
-        "slug": "6",
-        "category": "1"
+        "category": "1",
+        "description": "This is description<p>This is a test for a 2nd paragraph",
+        "features": "This is for features",
+        "weLove": "This is what we love about the game",
+        "weDontLove": "This is what we don't love",
+        "additionalInfo": [
+            {"attr": "Attribute 11", "value": "thing 11"},
+            {"attr": "Attribute 12", "value": "thing 12"},
+            {"attr": "Attribute 13", "value": "thing 13"},
+            {"attr": "Attribute 14", "value": "thing 14"},
+            {"attr": "Attribute 15", "value": "thing 15"}
+        ],
+        "additionalDescription": "This is for additional description"
     }
 ]

@@ -51,7 +51,7 @@
                     </div>
 
                     <div class="about_btn">
-                        <n-link to="/contact" class="group primary-btn opacity-100 transition-all" style="background-image:url(/images/others/btn-bg.webp)">Contact Now <img src="/images/icon/arrrow-icon.webp" alt="Arrow Icon" class="ml-3 w-5 h-5 group-hover:ml-4 transition-all"></n-link>  
+                        <n-link to="/" class="group primary-btn opacity-100 transition-all" style="background-image:url(/images/others/btn-bg.webp)">Contact Now <img src="/images/icon/arrrow-icon.webp" alt="Arrow Icon" class="ml-3 w-5 h-5 group-hover:ml-4 transition-all"></n-link>  
                     </div>
                     
                 </div>

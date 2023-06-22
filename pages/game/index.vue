@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import matchesData from '@/data/matches.json'
 export default {
     components: {
         HeaderSection: () => import('@/components/HeaderSection'),
@@ -26,9 +25,8 @@ export default {
     },
     data() {
         return {
-            matchesData,
             navOpen: false,
-            BreadcrumbTitle: "All Bonx Game",
+            BreadcrumbTitle: "Games We Play",
             BreadcrumbSubTitle: "Games",
             paddingTop: "pt-0"
         }

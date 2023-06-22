@@ -8,11 +8,7 @@
                     <div class="filter-option">
                         <select id="selectgame" class="px-5 h-14 w-full mb-8 sm:mb-0 sm:w-64 text-white bg-secondary-100 border-2 border-solid rounded-lg focus:outline-none border-gray-400 block"> 
                             <option value="" class="bg-black">All Category</option>
-                            <option value="1">Drawing</option>
-                            <option value="2">Alien Space</option>
-                            <option value="3">Hunter Sniper</option>
-                            <option value="4">Collage</option>
-                            <option value="5">Game one</option>
+                            <option value="1">Shooter</option>
                         </select>
                     </div>
                 </div>
