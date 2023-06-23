@@ -3,17 +3,7 @@
     <div class="container flex items-center space-x-4 flex-col lg:flex-row">
         <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
             <div class="sm:mr-12 mr-0 text-center relative">
-                <img src="/images/others/about-players.webp" alt="">
-                <CoolLightBox
-                    :items="items"
-                    :index="index"
-                    @close="index = null">
-                </CoolLightBox>
-                <div v-for="(item, imageIndex) in items" :key="imageIndex">
-                    <div @click="index = imageIndex" class="absolute bottom-0 right-0 md:right-32 lg:right-0 cursor-pointer h-120 w-120 bg-primary rounded-full flex justify-center items-center z-30 before:content-[''] before:h-120 before:w-120 before:bg-primary before:opacity-50 before:rounded-full before:absolute before:z-20 before:transition-all hover:before:h-32 hover:before:w-32">
-                        <i class="icofont-ui-play z-40 text-white"></i>
-                    </div>
-                </div>
+                <img src="/images/others/about-players.webp">
             </div>
         </div>
         <div class="w-full lg:w-1/2">
@@ -30,22 +20,7 @@
     <!-- About Section End -->
 </template>
 <script>
-  import CoolLightBox from 'vue-cool-lightbox'
-  import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
+
 export default {
-    components: {
-      CoolLightBox
-    },
-    data(){
-        return {
-            btnName: "Play Now",
-            items: [
-                {
-                    src: "https://player.twitch.tv/?channel=sarleeg&parent=www.decayeddojo.com"
-                }
-            ],
-            index: null
-        }
-    }
 }
 </script>

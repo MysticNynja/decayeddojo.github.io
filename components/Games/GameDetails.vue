@@ -12,18 +12,18 @@
         <section class="gameslide">
             <div class="container relative">
                 <CoolLightBox
-                    :items="games.gameMedia.streams"
+                    :items="games.streams"
                     :index="index"
                     @close="index = null">
                 </CoolLightBox>
 
                 <swiper class="swiper" :options="swiperOption">
-                    <swiper-slide v-for="(screenshot, imageIndex) in games.gameMedia.screenshots" :key="imageIndex + 100">
+                    <swiper-slide v-for="(screenshot, imageIndex) in games.screenshots" :key="imageIndex + 100">
                         <div class="relative">
                             <img class="sm:h-full h-64 w-full object-cover" :src="`${screenshot}`">
                         </div>
                     </swiper-slide>
-                    <swiper-slide v-for="(match, streamIndex) in games.gameMedia.streams" :key="streamIndex">
+                    <swiper-slide v-for="(match, streamIndex) in games.streams" :key="streamIndex">
                         <div class="relative">
                             <img class="sm:h-full h-64 w-full object-cover" :src="`${match.image}`" :alt="match.imageAlt">
                                 <div @click="index = streamIndex" class="absolute-center">
@@ -110,6 +110,9 @@ export default {
             },
             index: null 
         }
+    }, 
+    mounted(){
+        console.log(this.games)
     }
 }
 </script>

@@ -2,18 +2,36 @@
   <!-- Live Section Start -->
   <section class="live-section">
     <div class="container relative">
-
-      <CoolLightBox
-        :items="streamData"
-        :index="index"
-        @close="index = null">
-      </CoolLightBox>
+      <modal name="sxySamurai" :width=1600 :height=800 :adaptive=true>
+          <div style="padding-bottom: 56.25%; position: relative;">
+              <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=localhost" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  
+                  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"> 
+              </iframe>
+          </div>
+      </modal>
+      <modal name="mysticNynja" :width=1600 :height=800 :adaptive=true>
+          <div style="padding-bottom: 56.25%; position: relative;">
+              <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=localhost" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  
+                  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"> 
+              </iframe>
+          </div>
+      </modal>
 
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="(stream, imageIndex) in streamData" :key="imageIndex">
           <div class="relative">
             <img class="sm:h-full h-64 w-full object-cover" :src="`${stream.gamingBg}`" :alt="stream.gamingAlt">
-            <div @click="index = imageIndex" class="absolute-center">
+            <div @click="openModal(imageIndex)" class="absolute-center">
               <img class="md:w-120 w-20 h-20 md:h-120 cursor-pointer rounded" :src="`${stream.playBtnOne}`" :alt="stream.playAlt">
             </div>
             <div class="absolute md:h-20 h-12 left-1/2 bottom-0 transform -translate-x-2/4 bg-no-repeat bg-center w-full flex justify-center items-center" :style="{backgroundImage: `url(${ stream.videoShapeBg })`}">
@@ -62,6 +80,14 @@
         },
         index: null
       }
+    },
+    methods: {
+        openModal (index) { 
+          if(index == 0)
+            this.$modal.show('sxySamurai')
+          else if(index == 1)
+            this.$modal.show('mysticNynja')
+        },
     }
   }
 </script>
