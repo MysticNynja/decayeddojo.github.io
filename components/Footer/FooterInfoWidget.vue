@@ -29,6 +29,31 @@
                         href: "https://www.twitch.tv/decayeddojo",
                         BgShape: "/images/icon/twitch-bg.webp",
                         className: "icofont-twitch text-white"
+                    },
+                    {
+                        href: "https://www.twitter.com/decayeddojo",
+                        BgShape: "/images/icon/twittre.webp",
+                        className: "icofont-twitter text-white"
+                    },
+                    {
+                        href: "https://www.instagram.com/decayeddojo",
+                        BgShape: "/images/icon/instagram-bg.webp",
+                        className: "icofont-instagram text-white"
+                    },
+                    {
+                        href: "https://www.youtube.com/decayeddojo",
+                        BgShape: "/images/icon/youtobe-bg.webp",
+                        className: "icofont-youtube text-white"
+                    },
+                    {
+                        href: "https://www.kick.com/decayeddojo",
+                        BgShape: "/images/icon/kick-bg.webp",
+                        className: "icofont-vine text-black"
+                    },
+                    {
+                        href: "https://www.tiktok.com/decayeddojo",
+                        BgShape: "/images/icon/tiktok-bg.webp",
+                        className: "icofont-tiktok text-black"
                     }
                 ]
             }
