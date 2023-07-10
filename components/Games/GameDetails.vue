@@ -110,9 +110,6 @@ export default {
             },
             index: null 
         }
-    }, 
-    mounted(){
-        console.log(this.games)
     }
 }
 </script>

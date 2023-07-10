@@ -1,6 +1,6 @@
 <template>
     <!-- Blog Post Section Start -->
-    <div class="container pt-32">
+    <div class="container pt-16">
 
         <!-- Title Section Start -->
         <TitleSection :title="title" :text="text"/>
@@ -11,7 +11,7 @@
                 <div>
                     <img :src="service.imgSrc" :alt="service.alt">
                 </div>
-                <div class="flex flex-col justify-center items-center absolute bottom-0 left-0 right-0 bg-team-shape mt-10 bg-cover h-24 sm:h-20 md:h-28 lg:h-24 xl:h-32 2xl:h-32 group-hover:bg-team-hover-shape hover:transition-all">
+                <div class="flex flex-col justify-center items-center absolute bottom-0 left-0 right-0 bg-team-shape bg-cover h-24 sm:h-20 md:h-28 lg:h-24 xl:h-32 2xl:h-32 group-hover:bg-team-hover-shape hover:transition-all">
                     <h3 class="text-white font-bold text-lg">{{service.name}}</h3>
                     <span class="text-primary text-sm md:text-base group-hover:text-white transition-all">{{service.subtitle}}</span>
                     <ul class="flex">

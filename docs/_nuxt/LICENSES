@@ -1,11 +1,4 @@
 /*!
- * Vue.js v2.7.14
- * (c) 2014-2022 Evan You
- * Released under the MIT License.
- */
-
-
-/*!
  * vue-awesome-swiper v4.1.1
  * Copyright (c) Surmon. All rights reserved.
  * Released under the MIT License.
@@ -40,3 +33,10 @@ and limitations under the License.
 ***************************************************************************** */
 
 //! moment.js
+
+
+/*!
+ * Vue.js v2.7.14
+ * (c) 2014-2022 Evan You
+ * Released under the MIT License.
+ */
