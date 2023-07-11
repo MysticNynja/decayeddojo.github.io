@@ -1,16 +1,13 @@
 [
     {
-        "videoShapeBg": "/images/others/text-mini-shape.webp",
-        "gamingBg": "/images/bg/SxySamurai-Twitch.webp",
-        "gamingAlt": "Gaming BG",
-        "playBtnOne": "/images/others/play-btn.webp",
-        "shapeTitle": "SxySamurai on Twitch"
-    },
-    {
-        "videoShapeBg": "/images/others/text-mini-shape.webp",
-        "gamingBg": "/images/bg/MysticNynja-Twitch.webp",
-        "gamingAlt": "Gaming BG",
-        "playBtnOne": "/images/others/play-btn.webp",
-        "shapeTitle": "MysticNynja on Twitch"
+        "slug": "1",
+        "gameSlug": "2",
+        "date": "November 11th, 2019",
+        "game": "7 Days to Die", 
+        "title": "Zombies + Heavy Metal!",
+        "videoDescTitle": "7 days to die Horde night, day 63 solo.",
+        "videoDescBody": "Kelly in his natural environment, complete and utter chaos with metal music.  Some of this stream was copyright striked so it will be muted.  Come check out more streams on twitch!",
+        "imgSrc": "/images/streams/thumb-1.webp",
+        "videoSrc": "https://player.twitch.tv/?video=372476916&parent=localhost&parent=www.decayeddojo.com&autoplay=false"
     }
 ]

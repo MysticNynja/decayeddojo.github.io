@@ -1,18 +1,11 @@
 <template>
   <div class="bg-cover bg-gray-800" style="background-image:url(/images/bg/body-bg2.webp);">
-    
     <HeaderSection/>
-
     <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
-    
-    <Breadcrumb :BreadcrumbTitle="BreadcrumbTitle" :BreadcrumbSubTitle="BreadcrumbSubTitle"/>
-
+    <Breadcrumb :BreadcrumbTitle="BreadcrumbTitle" :BreadcrumbSubTitle="BreadcrumbSubTitle" :BreadcrumbParent="BreadcrumbParent" :BreadcrumbParentURL="BreadcrumbParentURL"/>
     <AboutUs/>
-
     <LiveStream/>
-
     <GamerTeam/>
-
     <Footer/>
 
   </div>
@@ -34,6 +27,8 @@ export default {
           navOpen: false,
           BreadcrumbTitle: "About Us",
           BreadcrumbSubTitle: "About Us",
+          BreadcrumbParent: "Home",
+          BreadcrumbParentURL: "/",
           paddingTop: "pt-32"
       }
   },
