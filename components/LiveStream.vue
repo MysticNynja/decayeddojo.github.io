@@ -57,7 +57,7 @@
   import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
   import '../assets/css/swiper.css';
-  import streamData from '../data/streams.json'
+  import streamData from '../data/aboutStreams.json'
   
   export default {
 

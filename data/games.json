@@ -37,5 +37,69 @@
             {"attr": "Attribute 15", "value": "thing 15"}
         ],
         "additionalDescription": "This is for additional description"
+    },
+    {
+        "releaseDate": "Dec 13, 2013",
+        "platform": "PC",
+        "gameImage": "/images/games/7 Days to Die/7DaysToDie_index.webp",
+        "gameOverview": "A zombie survival game",
+        "screenshots": [
+            "/images/games/7 Days to Die/screenshots/screenshot1.webp",
+            "/images/games/7 Days to Die/screenshots/screenshot2.webp",
+            "/images/games/7 Days to Die/screenshots/screenshot3.webp",
+            "/images/games/7 Days to Die/screenshots/screenshot4.webp",
+            "/images/games/7 Days to Die/screenshots/screenshot5.webp",
+            "/images/games/7 Days to Die/screenshots/screenshot6.webp"
+        ],
+        "streams": [],
+        "videos": [],
+        "btnName": "Enter Wasteland",
+        "title": "7 Days to Die",
+        "slug": "2",
+        "category": "1",
+        "description": "This is description for the second game<p>This is a test for a 2nd paragraph for the second game",
+        "features": "This is for features for the second game",
+        "weLove": "This is what we love about for the second game",
+        "weDontLove": "This is what we don't love for the second game",
+        "additionalInfo": [
+            {"attr": "Attribute 21", "value": "thing 21"},
+            {"attr": "Attribute 22", "value": "thing 22"},
+            {"attr": "Attribute 23", "value": "thing 23"},
+            {"attr": "Attribute 24", "value": "thing 24"},
+            {"attr": "Attribute 25", "value": "thing 25"}
+        ],
+        "additionalDescription": "This is for additional description for the second game"
+    },
+    {
+        "releaseDate": "Dec 13, 2013",
+        "platform": "PC",
+        "gameImage": "/images/games/Halo Infinite/HaloInfinite_index.webp",
+        "gameOverview": "A halo game that is really over hyped",
+        "screenshots": [
+            "/images/games/Halo Infinite/screenshots/screenshot1.webp",
+            "/images/games/Halo Infinite/screenshots/screenshot2.webp",
+            "/images/games/Halo Infinite/screenshots/screenshot3.webp",
+            "/images/games/Halo Infinite/screenshots/screenshot4.webp",
+            "/images/games/Halo Infinite/screenshots/screenshot5.webp",
+            "/images/games/Halo Infinite/screenshots/screenshot6.webp"
+        ],
+        "streams": [],
+        "videos": [],
+        "btnName": "Enter Zeta Halo",
+        "title": "Halo Infinite",
+        "slug": "3",
+        "category": "1",
+        "description": "This is description for the third game<p>This is a test for a 2nd paragraph for the third game",
+        "features": "This is for features for the third game",
+        "weLove": "This is what we love about for the third game",
+        "weDontLove": "This is what we don't love for the third game",
+        "additionalInfo": [
+            {"attr": "Attribute 31", "value": "thing 31"},
+            {"attr": "Attribute 32", "value": "thing 32"},
+            {"attr": "Attribute 33", "value": "thing 33"},
+            {"attr": "Attribute 34", "value": "thing 34"},
+            {"attr": "Attribute 35", "value": "thing 35"}
+        ],
+        "additionalDescription": "This is for additional description for the third game"
     }
 ]
