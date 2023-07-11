@@ -7,7 +7,7 @@
               <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=localhost" 
+                  src="https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=localhost&parent=decayeddojo.com" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  
                   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"> 
@@ -19,7 +19,7 @@
               <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=localhost" 
+                  src="https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=localhost&parent=decayeddojo.com" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  
                   style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"> 
