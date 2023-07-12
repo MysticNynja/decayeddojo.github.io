@@ -25,7 +25,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    // '~/plugins/vue-awesome-swiper.js',
     {
       src: '~/plugins/vue-awesome-swiper.js', 
       ssr: false
@@ -39,6 +38,7 @@ export default {
         src: '~/plugins/vue-js-modal', 
         mode: "client"
     }
+    
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
