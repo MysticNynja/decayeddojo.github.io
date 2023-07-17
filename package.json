@@ -20,7 +20,6 @@
     "vue-disqus": "^4.0.1",
     "vue-js-modal": "^2.0.1",
     "vue-observe-visibility": "^1.0.0",
-    "wavesurfer.js-vue": "^1.0.0"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.2.1",
