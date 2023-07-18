@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/player/6", {data:[{}],fetch:{},mutations:void 0});

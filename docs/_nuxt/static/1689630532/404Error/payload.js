@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/404Error", {data:[{}],fetch:{},mutations:void 0});
