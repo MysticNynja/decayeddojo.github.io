@@ -1,96 +1,17 @@
 <template>
-    
+<div class="grid justify-center items-center">
+    <iframe :src="source" height="204px" width="800px" frameborder="0" scrolling="no"></iframe>
+</div>
 </template>
 
 <script>
-    
-    export default {
-        components: {
-           
-        },
-        data() {
-            return {
-                options: {},
-                file: "http://example.com/file.mp3",
-            };
-        },
+export default {
+  components: {
+  },
+  props: ["source"],
+  data() {
+    return {
     };
+  }
+}
 </script>
-<style scoped>
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
-
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    transition: all 0.35s linear;
-}
-
-section {
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    background-color: #031116;
-}
-
-.player {
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-    width: 40rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 1rem 1.5rem #10101024;
-    overflow: hidden;
-}
-
-.player .thumb {
-    width: 10rem;
-    height: 10rem;
-}
-
-.player .thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.player .info {
-    padding: 1rem;
-}
-
-.player .detail {
-    display: grid;
-    grid-template-columns: 1fr 4rem;
-    margin-bottom: 1rem;
-}
-
-.player .title {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-.player .title .time {
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 0.25rem;
-}
-
-.player .control i {
-    width: 3.5rem;
-    height: 3.5rem;
-    display: grid;
-    place-content: center;
-    font-size: 1.25rem;
-    background-color: #1AAFFF;
-    color: white;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 0rem #1AAFFFAA;
-}
-
-.player .control i:hover {
-    box-shadow: 0 0 1.5rem #1AAFFFAA;
-    font-size: 1.5rem;
-}
-</style>

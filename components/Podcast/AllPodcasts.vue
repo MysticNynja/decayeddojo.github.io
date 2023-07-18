@@ -1,33 +1,37 @@
 <template>
     <section>
         <div class="flex items-center justify-center">
-            <img class="h-full pr-4 ml-8" src="/images/podcast/index.webp"/>
+            <img class="h-full pr-4 ml-8 pb-9" src="/images/podcast/index.webp"/>
         </div>
-        <div class="flex items-center justify-center pl-4 pt-3">
-            <div class="flex items-center justify-between h-24 text-white bg-purple-950 rounded-lg shadow-md">
-                <div class="flex flex-col px-4">
-                    <span class="text-xs text-purple-300">Subscribe!</span>
-                    <p class="text-2xl font-semibold uppercase">Select a platform</p>
+        <div v-for="(podcast, index) in podcasts" :key="index">
+            <div class="flex sm:items-center flex-col sm:flex-row">
+                <div class="lg:w-40 xl:w-52 2xl:w-52 md:w-44 sm:w-37 w-32 mb-7 sm:mb-0 flex-shrink-0">
+                    <n-link :to="`/podcast/${podcast.slug}`"></n-link>
                 </div>
-                <div class="mx-auto w-24 h-32 rounded-full ml-auto pt-5">
-                    <div class="relative">
-                        <img src="/images/podcast/subscribeButton_Hover.webp" class="rounded-full transition-transform duration-300 transform hover:scale-110" alt="Imagem de perfil" />
-                        <img src="/images/podcast/subscribeButton.webp" class="rounded-full absolute top-0 left-0 opacity-0 transition-opacity duration-300 transform hover:opacity-100" alt="Nova imagem" />
-                    </div>
+                <div class="xl:ml-9 lg:ml-6 md:ml-9 ml-3 flex flex-col flex-1">
+                    <span class="text-sm text-white font-exo font-normal mb-2 sm:mb-5"><i class="icofont-calendar text-primary mr-2"></i>{{podcast.date}}</span>
+                    <h2 class="text-white xl:text-2xl lg:text-xl md:text-2xl sm:text-lg font-bold uppercase font-exo hover:text-primary transition-all mb-2 sm:mb-5 leading-9">
+                        <n-link :to="`/podcast/${podcast.slug}`">{{podcast.title}}</n-link>
+                    </h2>
+                    <n-link :to="`/podcast/${podcast.slug}`" class="uppercase font-exo relative pl-12 text-sm text-white transition-all hover:text-primary before:content-[''] before:absolute before:h-0.5 before:w-7.5 before:bg-primary before:left-0 before:top-1/2 before:transform before:-translate-y-1/2">Listen In</n-link>
                 </div>
             </div>
         </div>
-        <PodcastPlayer/>
     </section>
 </template>
 
 <script>
+    import podcasts from '@/data/podcasts.json'
     export default {
         components: {
-            PodcastPlayer: () => import('@/components/Podcast/PodcastPlayer'),
         },
         data() {
-            return {}
+            return {
+                podcasts,
+                feedUrl: "https://anchor.fm/s/562e5760/podcast/rss",
+                name: "",
+                limit: 5,
+            }
         }
     }
 </script>

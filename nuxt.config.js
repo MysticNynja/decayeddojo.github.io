@@ -40,6 +40,12 @@ export default {
     }
     
   ],
+  script: [
+    {
+      src: '~/assets/js/audio-player.js', 
+    },
+  ],
+
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
