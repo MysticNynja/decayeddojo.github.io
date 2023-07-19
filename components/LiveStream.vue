@@ -88,6 +88,10 @@
           else if(index == 1)
             this.$modal.show('mysticNynja')
         },
+    },
+    mounted(){
+      this.$modal.hide('sxySamurai');
+      this.$modal.hide('mysticNynja')
     }
   }
 </script>
