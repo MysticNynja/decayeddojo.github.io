@@ -12,6 +12,7 @@
     "@nuxtjs/moment": "^1.6.1",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
+    "nuxt-video-player": "^1.0.17",
     "swiper": "^5.4.5",
     "vue-audio-better": "^3.0.1",
     "vue-awesome-swiper": "^4.1.1",
