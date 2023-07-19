@@ -4,26 +4,12 @@
     <div class="container relative">
       <modal name="sxySamurai" :width=1600 :height=800 :adaptive=true>
           <div style="padding-bottom: 56.25%; position: relative;">
-              <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=decayeddojo.com" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  
-                  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"> 
-              </iframe>
+             <video-player src="https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=decayeddojo.com&parent=localhost"/>
           </div>
       </modal>
       <modal name="mysticNynja" :width=1600 :height=800 :adaptive=true>
           <div style="padding-bottom: 56.25%; position: relative;">
-              <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=decayeddojo.com" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  
-                  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"> 
-              </iframe>
+              <video-player src="https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=decayeddojo.com&parent=localhost"/>
           </div>
       </modal>
 
@@ -58,13 +44,17 @@
   import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
   import '../assets/css/swiper.css';
   import streamData from '../data/aboutStreams.json'
-  
+  import VideoPlayer from 'nuxt-video-player'
+
+  require('nuxt-video-player/src/assets/css/main.css')
+
   export default {
 
     components: {
       Swiper,
       SwiperSlide,
-      CoolLightBox
+      CoolLightBox,
+      VideoPlayer
     },
     data() {
       return {
