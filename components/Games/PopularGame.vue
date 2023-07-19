@@ -1,5 +1,5 @@
 <template>
-    <div class="container mb-120">
+    <div class="container my-120">
         <TitleSection :title="title" :text="text"/>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-6">
             <div class="relative group before:content-[''] before:absolute before:w-full before:h-full before:opacity-0 before:bg-black before:top-0 before:left-0 before:right-0 before:bottom-0 overflow-hidden hover:before:opacity-70 transition-all hover:before:transition-all before:border-4 before:border-white before:rounded-4xl before:border-opacity-20" v-for="(games, index) in gameHome.slice(0, 4)" :key="index">
@@ -21,8 +21,8 @@
         data () {
             return {
                 gameHome,
-                title: "Popular Game",
-                text: "When unknown printer took type and scrambled it to make type specimen book centuries,"
+                title: "Games We Play",
+                text: "When we play a game I put a page where you can find more information about it.  You could go out and look at Steam or whatever, but I wanna do it too."
             }
         }
     }
