@@ -34,7 +34,6 @@
         },
         mounted () {
             this.podcastData = podcastData.find(podcasts => podcasts.slug == this.$route.params.slug);
-            console.log(this.podcastData.audioSrc)
         }
     }
 

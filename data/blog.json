@@ -1,90 +1,26 @@
 [
     {
-        "slug": "1",
-        "date": "20 January 2022",
-        "title": "Wartales is serious making an army of hogs",
+        "slug": "just-an-example",
+        "date": "18 July 2023",
+        "title": "SxySamurai Example",
         "imgSrc": "/images/blog/blog1.webp",
         "imgLarge": "/images/blog/blog-sticky.webp",
         "blogGrid": "/images/blog/blog-grid-1.webp",
-        "alt": "Blog",
-        "tag": "Gamer",
-        "slugTag": "Gamer"
-    },
-    {
-        "slug": "2",
-        "date": "08 March 2022",
-        "title": "Control the raching mach for best performance.",
-        "imgSrc": "/images/blog/blog2.webp",
-        "imgLarge": "/images/blog/blog-sticky.webp",
-        "blogGrid": "/images/blog/blog-grid-2.webp",
-        "alt": "Blog",
-        "tag": "Adventure",
-        "slugTag": "Adventure"
-    },
-    {
-        "slug": "3",
-        "date": "24 February 2022",
-        "title": "Fights in Tight Spaces review best game",
-        "imgSrc": "/images/blog/blog3.webp",
-        "imgLarge": "/images/blog/blog-sticky.webp",
-        "blogGrid": "/images/blog/blog-grid-3.webp",
-        "alt": "Blog",
-        "tag": "Action",
-        "slugTag": "Action"
-    },
-    {
-        "slug": "4",
-        "date": "26 April 2022",
-        "title": "Completing the mission your match will end",
-        "imgSrc": "/images/blog/blog4.webp",
-        "imgLarge": "/images/blog/blog-sticky.webp",
-        "blogGrid": "/images/blog/blog-grid-4.webp",
-        "alt": "Blog",
-        "tag": "Esports",
-        "slugTag": "Esports"
-    },
-    {
-        "slug": "5",
-        "date": "20 January 2022",
-        "title": "Minecrafts are having an existential crisis",
-        "imgSrc": "/images/blog/blog5.webp",
-        "imgLarge": "/images/blog/blog-sticky.webp",
-        "blogGrid": "/images/blog/blog-grid-5.webp",
-        "alt": "Blog",
-        "tag": "Fantasy",
-        "slugTag": "Fantasy"
-    },
-    {
-        "slug": "6",
-        "date": "08 March 2022",
-        "title": "It is a long established space shooter game",
-        "imgSrc": "/images/blog/blog6.webp",
-        "imgLarge": "/images/blog/blog-sticky.webp",
-        "blogGrid": "/images/blog/blog-grid-6.webp",
-        "alt": "Blog",
-        "tag": "Fortnite",
-        "slugTag": "Fortnite"
-    },
-    {
-        "slug": "7",
-        "date": "24 February 2022",
-        "title": "distracted by readable content page",
-        "imgSrc": "/images/blog/blog7.webp",
-        "imgLarge": "/images/blog/blog-sticky.webp",
-        "blogGrid": "/images/blog/blog-grid-2.webp",
-        "alt": "Blog",
-        "tag": "Gamer",
-        "slugTag": "Gamer"
-    },
-    {
-        "slug": "8",
-        "date": "26 April 2022",
-        "title": "The most popular game controlling device",
-        "imgSrc": "/images/blog/blog8.webp",
-        "imgLarge": "/images/blog/blog-sticky.webp",
-        "blogGrid": "/images/blog/blog-grid-1.webp",
-        "alt": "Blog",
-        "tag": "Matches",
-        "slugTag": "Matches"
+        "slugTag": "Gamer",
+        "author": "Kelly (SxySamurai)",
+        "readTime": "5 min",
+        "tags": ["PS5", "Japanese", "test"],
+        "content": [
+            {"h4": "Make your store stand out from the others by converting more shoppers into buyers!"}, 
+            {"p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap electro typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}, 
+            {"p": "Paragraph 2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap electro typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
+            {"h4": "Our company fails the real world test in all kinds of ways."},
+            {"p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap electro typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}, 
+            {"img": "/images/blog/blog_details_layer.webp"}, 
+            {"blockquote": "Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the 1500 printer took galley of type scrambled it to make a type specimen book."},
+            {"h4": "Our company fails the real world test in all kinds of ways."},
+            {"p": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap electro typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
+        ]
+
     }
 ]
