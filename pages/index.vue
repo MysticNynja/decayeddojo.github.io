@@ -1,22 +1,12 @@
 <template>
   <div class="bg-cover bg-gray-800" style="background-image:url(/images/bg/body-bg.webp);">
-
     <HeaderSection/>
-
     <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
-
     <HeroBanner/>
-
     <GamingWorld/>
-
     <LiveStream/>
-
-    <UpcomingMatchesHome/>
-
     <PopularGame/>
-
     <BlogPost/>
-
     <Footer/>
 
   </div>

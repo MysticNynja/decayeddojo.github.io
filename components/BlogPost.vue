@@ -36,7 +36,7 @@
             return {
                 blogData,
                 title: "Latest Blog",
-                text: "You are most welcome In gaming world You are most welcome In gaming world."
+                text: "Check out the ramblings of some old guys who have had a lifetime worth of gaming and experiences."
             }
         }
     }
