@@ -1,18 +1,17 @@
 <template>
   <!-- Live Section Start -->
   <section class="live-section">
+    <modal name="sxySamurai" :width=1600 :height=800 :adaptive=true>
+        <div style="padding-bottom: 56.25%; position: relative;">
+            <video-player src="https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=decayeddojo.com&parent=localhost"/>
+        </div>
+    </modal>
+    <modal name="mysticNynja" :width=1600 :height=800 :adaptive=true>
+        <div style="padding-bottom: 56.25%; position: relative;">
+            <video-player src="https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=decayeddojo.com&parent=localhost"/>
+        </div>
+    </modal>
     <div class="container relative">
-      <modal name="sxySamurai" :width=1600 :height=800 :adaptive=true>
-          <div style="padding-bottom: 56.25%; position: relative;">
-             <video-player src="https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=decayeddojo.com&parent=localhost"/>
-          </div>
-      </modal>
-      <modal name="mysticNynja" :width=1600 :height=800 :adaptive=true>
-          <div style="padding-bottom: 56.25%; position: relative;">
-              <video-player src="https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=decayeddojo.com&parent=localhost"/>
-          </div>
-      </modal>
-
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="(stream, imageIndex) in streamData" :key="imageIndex">
           <div class="relative">
@@ -73,6 +72,7 @@
     },
     methods: {
         openModal (index) { 
+          console.log("THIS HAS BEEN CALLED")
           if(index == 0)
             this.$modal.show('sxySamurai')
           else if(index == 1)
