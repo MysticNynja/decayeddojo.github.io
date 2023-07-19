@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cover bg-gray-800" style="background-image:url(/images/bg/body-bg2.webp);">
+  <div class="bg-cover bg-gray-800">
     <HeaderSection/>
     <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
     <Breadcrumb :BreadcrumbTitle="BreadcrumbTitle" :BreadcrumbSubTitle="BreadcrumbSubTitle" :BreadcrumbParent="BreadcrumbParent" :BreadcrumbParentURL="BreadcrumbParentURL"/>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cover bg-gray-800" style="background-image:url(/images/bg/body-bg2.webp);">
+  <div class="bg-cover bg-gray-800">
 
     <HeaderSection/>
 

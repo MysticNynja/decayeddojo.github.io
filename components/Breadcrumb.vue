@@ -1,10 +1,10 @@
 <template>
     <!-- Breadcrumb Start -->
-    <div class="flex items-center relative bg-no-repeat bg-scroll bg-center bg-cover h-365 md:h-460 lg:h-500" style="background-image:url(/images/bg/breadcrumbs-bg.webp);">
+    <div class="flex items-center relative bg-no-repeat bg-scroll bg-center bg-cover h-365 md:h-460 lg:h-500">
         <div class="container">
             <div class="relative 2xl:pt-20 lg:pt-16 pt-12 md:z-10 flex flex-col justify-center items-center text-center">
 
-                <h1 class="text-white font-metal uppercase font-normal lg:text-5.5xl md:text-7xl text-5xl tracking-wide mb-6 text-shadow" v-if="BreadcrumbTitle">{{BreadcrumbTitle}}</h1>
+                <h1 class="text-white font-display uppercase font-normal lg:text-5.5xl md:text-7xl text-5xl tracking-wide mb-6 text-shadow" v-if="BreadcrumbTitle">{{BreadcrumbTitle}}</h1>
 
                 <ul class="flex">
                     <li>

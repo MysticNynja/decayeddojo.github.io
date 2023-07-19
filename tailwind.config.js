@@ -64,7 +64,8 @@ module.exports = {
             },
             fontFamily: {
               'metal': ["'Metal Mania', cursive"],
-              'exo': ["'Exo', sans-serif"]
+              'exo': ["'Exo', sans-serif"], 
+              'display': ["'VT323', monospace"],
             },
             fontSize: {
               '7.5xl': ['7.5rem'],
