@@ -5,6 +5,7 @@
             <div class="flex py-3 items-center justify-between">
                 <HeaderLogo/>
                 <MainMenu/>
+                <SignupButton/>
             </div>
         </div>
     </header>

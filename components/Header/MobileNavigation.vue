@@ -6,8 +6,27 @@
                     <n-link class="text-base font-semibold capitalize block pb-4 pt-4 pt- border-b-1 border-gray-200 transition-all hover:text-primary text-black text-dark" to="/">Home</n-link>
                 </li>
 
+                <li class="menu-item-has-children">
+                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4 pt- border-b-1 border-gray-200 transition-all hover:text-primary text-black text-dark" to="/blog">Blog</n-link>
+                </li>
+
                 <li class="menu-item-has-children relative block">
-                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4  border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/">Pages</n-link>
+                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4  border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="">Content</n-link>
+                    <ul class="sub-menu ml-5">
+                        <li>
+                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/video">Vidoes</n-link>
+                        </li>
+                        <li>
+                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/stream">Streams</n-link>
+                        </li>
+                        <li>
+                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/podcast">Podcast</n-link>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children relative block">
+                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4  border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="">About</n-link>
                     <ul class="sub-menu ml-5">
                         <li>
                             <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/about">About Us</n-link>
@@ -16,25 +35,9 @@
                             <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/game">All Games</n-link>
                         </li>
                         <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/game/1">Game Details</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/player">Players</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/player/1">Player Details</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/FAQ">FAQ</n-link>
-                        </li>
-                        <li>
-                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/404Error">404-Error</n-link>
+                            <n-link class="text-sm font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/faq">FAQ</n-link>
                         </li>
                     </ul>
-                </li>
-
-                <li>
-                    <n-link class="text-base font-semibold capitalize block pb-4 pt-4 border-b-1 border-gray-200 transition-all hover:text-primary text-black" to="/">Contact Us</n-link>
                 </li>
             </ul>
         </nav>
