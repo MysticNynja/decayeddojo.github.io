@@ -6,12 +6,12 @@
     <div class="details">
         <div class="container">
             <div class="single-grid">
-                <div class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden" style="padding-top: 56.25%">
-                    <iframe
+                <div class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden">
+                    <video-player
                         class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
                         :src="blogData.videoSrc"
                         allowfullscreen="">
-                    </iframe>
+                    </video-player>
                 </div>
                 <div class="content max-w-4xl m-auto mt-20">                    
                     <div class="description">
@@ -56,9 +56,12 @@
 <script>
     import blogData from '@/data/videos.json'
     import gameHome from '@/data/games.json'
+    import VideoPlayer from 'nuxt-video-player'
+    require('nuxt-video-player/src/assets/css/main.css')
     export default {
         props: ["match"],
         components: {
+            VideoPlayer,
             HeaderSection: () => import('@/components/HeaderSection'),
             OffCanvasMobileMenu: () => import('@/components/Header/OffCanvasMobileMenu'),
             Breadcrumb: () => import('@/components/Breadcrumb'),
