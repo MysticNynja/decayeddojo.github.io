@@ -1,6 +1,6 @@
 <template>
 <div class="grid justify-center items-center">
-    <iframe :src="source" height="204px" width="800px" frameborder="0" scrolling="no"></iframe>
+    <iframe class="lg:h-230 lg:w-820 md:h-120 md:w-500" :src="source" frameborder="0" scrolling="no"></iframe>
 </div>
 </template>
 
