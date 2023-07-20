@@ -5,7 +5,7 @@
 
         <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
 
-        <Breadcrumb :BreadcrumbTitle="BreadcrumbTitle" :BreadcrumbSubTitle="BreadcrumbSubTitle"/>
+        <Breadcrumb :BreadcrumbTitle="BreadcrumbTitle" :BreadcrumbSubTitle="BreadcrumbSubTitle" :BreadcrumbParent="BreadCrumbParent" :BreadcrumbParentURL="BreadcrumbParentURL" />
 
         <AllGames/>
 
@@ -28,6 +28,8 @@ export default {
             navOpen: false,
             BreadcrumbTitle: "Games We Play",
             BreadcrumbSubTitle: "Games",
+            BreadCrumbParent: "Home",
+            BreadcrumbParentURL: "/",
             paddingTop: "pt-0"
         }
     },

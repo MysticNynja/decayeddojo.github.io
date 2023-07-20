@@ -5,7 +5,7 @@
 
         <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
 
-        <Breadcrumb :BreadcrumbTitle="BreadcrumbTitle" :BreadcrumbSubTitle="BreadcrumbSubTitle"/>
+        <Breadcrumb :BreadcrumbTitle="BreadcrumbTitle" :BreadcrumbSubTitle="gameHome.title" :BreadcrumbParent="BreadCrumbParent" :BreadcrumbParentURL="BreadcrumbParentURL" />
 
         <GameDetails :games="gameHome"/>
 
@@ -31,7 +31,8 @@
                 gameHome,
                 navOpen: false,
                 BreadcrumbTitle: "Game Details",
-                BreadcrumbSubTitle: "Game",
+                BreadCrumbParent: "All Games",
+                BreadcrumbParentURL: "/game",
                 paddingTop: "pt-32",
                 slug: this.$route.params.slug
             };

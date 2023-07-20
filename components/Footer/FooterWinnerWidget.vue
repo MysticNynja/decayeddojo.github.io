@@ -21,17 +21,17 @@ export default {
                 {
                     gamingBg: "/images/games/Fallout_76/icon.webp",
                     gamingAlt: "Fallout 76",
-                    slug: 1
+                    slug: "fallout-76"
                 },
                 {
                     gamingBg: "/images/games/7 Days to Die/icon.webp",
                     gamingAlt: "7 Days to Die",
-                    slug: 2
+                    slug: "7-days-to-die"
                 },
                 {
                     gamingBg: "/images/games/Halo Infinite/icon.webp",
                     gamingAlt: "Halo Infinite",
-                    slug: 3
+                    slug: "halo-infinite"
                 }
             ]
         }
