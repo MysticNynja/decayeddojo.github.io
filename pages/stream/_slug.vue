@@ -6,10 +6,12 @@
         <div class="details">
             <div class="container">
                 <div class="single-grid">
-                    <div class="text-center">
-                        <section>
-                            <iframe width="1170" height="670" :src="streamData.videoSrc" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </section>
+                    <div class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden" style="padding-top: 56.25%">
+                        <iframe
+                            class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
+                            :src="streamData.videoSrc"
+                            allowfullscreen="">
+                        </iframe>
                     </div>
                     <div class="content max-w-4xl m-auto mt-20">                    
                         <div class="description">
