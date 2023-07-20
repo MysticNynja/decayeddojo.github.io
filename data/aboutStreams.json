@@ -4,13 +4,15 @@
         "gamingBg": "/images/bg/SxySamurai-Twitch.webp",
         "gamingAlt": "Gaming BG",
         "playBtnOne": "/images/others/play-btn.webp",
-        "shapeTitle": "SxySamurai on Twitch"
+        "shapeTitle": "SxySamurai on Twitch",
+        "src": "https://player.twitch.tv/?autoplay=false&channel=sxysamurai&parent=localhost"
     },
     {
         "videoShapeBg": "/images/others/text-mini-shape.webp",
         "gamingBg": "/images/bg/MysticNynja-Twitch.webp",
         "gamingAlt": "Gaming BG",
         "playBtnOne": "/images/others/play-btn.webp",
-        "shapeTitle": "MysticNynja on Twitch"
+        "shapeTitle": "MysticNynja on Twitch",
+        "src": "https://player.twitch.tv/?autoplay=false&channel=mysticNynja&parent=localhost"
     }
 ]

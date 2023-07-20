@@ -4,6 +4,7 @@
     <OffCanvasMobileMenu :class="{'show-mobile-menu' : navOpen}" @togglenav="navOpen = !navOpen" />
     <HeroBanner/>
     <GamingWorld/>
+    <LiveStream />
     <PopularGame/>
     <BlogPost/>
     <Footer/>
