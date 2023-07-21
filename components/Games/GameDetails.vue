@@ -5,7 +5,7 @@
         <h2 class="text-white font-bold uppercase xl:text-title lg:text-5xl md:text-4xl sm:text-3xl text-2xl xl:leading-70 lg:leading-12 leading-10">{{games.title}}</h2>
         <div class="content-details">
             <div class="description mt-6">
-                <p class="leading-8">{{games.gameOverview}}</p>
+                <p class="leading-8" v-html="games.gameOverview"></p>
                 <br>
             </div>
         </div>

@@ -2,7 +2,7 @@
     <!-- All Games Start -->
     <div class="container mb-120">
 
-        <div class="filter-wrap bg-secondary-100 rounded-2xl px-5 py-7 mb-10">
+        <!-- <div class="filter-wrap bg-secondary-100 rounded-2xl px-5 py-7 mb-10">
             <div class="flex flex-col sm:flex-row justify-between">
                 <div class="category-filter">
                     <div class="filter-option">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-6 item-display">
             <div class="item relative group  before:content-[''] before:absolute before:w-full before:h-full before:opacity-0 before:bg-black before:top-0 before:left-0 before:right-0 before:bottom-0 overflow-hidden hover:before:opacity-70 transition-all hover:before:transition-all before:border-4 before:border-white before:rounded-4xl before:border-opacity-20" v-for="(games, index) in gameHome" :key="index">

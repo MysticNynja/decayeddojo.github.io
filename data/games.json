@@ -3,7 +3,7 @@
         "releaseDate": "Nov 14, 2018",
         "platform": "PC",
         "gameImage": "/images/games/Fallout_76/Fallout_76_index.webp",
-        "gameOverview": "This game is fun, but it isn't like other FallOut games",
+        "gameOverview": "Bethesda Game Studios welcome you to Fallout 76. Twenty-five years after the bombs fall, you and your fellow Vault Dwellers emerge into post-nuclear America. Explore a vast wasteland in this open-world multiplayer addition to the Fallout story.",
         "screenshots": [
             "/images/games/Fallout_76/screenshots/screenshot1.webp",
             "/images/games/Fallout_76/screenshots/screenshot2.webp",
@@ -25,24 +25,24 @@
         "title": "Fallout 76",
         "slug": "fallout-76",
         "category": "1",
-        "description": "This is description<p>This is a test for a 2nd paragraph",
-        "features": "This is for features",
-        "weLove": "This is what we love about the game",
-        "weDontLove": "This is what we don't love",
+        "description": "Twenty-five years after the bombs fell, you and your fellow Vault Dwellers—chosen from the nation's best and brightest - emerge into post-nuclear America on Reclamation Day, 2102. Play solo or join together as you explore, quest, build, and triumph against the wasteland's greatest threats. Explore a vast wasteland, devastated by nuclear war, in this open-world multiplayer addition to the Fallout story. Experience the largest, most dynamic world ever created in the legendary Fallout universe.<p class='mt-3'>The Blue Moon rises over the hills of Appalachia, bringing forth new Cryptids to threaten the mercantile progress of the Blue Ridge Caravan Company. Defend their Brahmin herds and trade routes from crazed Cultists and monstrous creatures in two new Public Events and side quests, plus face enemies infected with a deadly new Daily Ops mutation for a chance to earn new rewards!</p>",
+        "features": "<h4>Immersive Questlines and Engaging Characters</h4><p>Uncover the secrets of West Virginia by playing through an immersive main quest, starting from the moment you leave Vault 76. Befriend or betray new neighbors who have come to rebuild, and experience Appalachia through the eyes of its residents.</p><h4>Seasonal Scoreboard</h4><p>Progress through a season with a completely free set of rewards like consumables, C.A.M.P. items and more, by completing limited-time challenges.</p><h4>Multiplayer Roleplaying</h4><p>Create your character with the S.P.E.C.I.A.L system and forge your own path and reputation in a new and untamed wasteland with hundreds of locations. Whether you journey alone or with friends, a new and unique Fallout adventure awaits.</p><h4>Mountain splendorland</h4><p>The story lives and breathes through the world of Fallout 76, which brings to life six distinct West Virginia regions. From the forests of Appalachia to the noxious crimson expanses of the Cranberry Bog, each area offers its own risks and rewards.</p><h4>A New American Dream</h4><p>Use the all-new Construction and Assembly Mobile Platform (C.A.M.P.) to build and craft anywhere in the world. Your C.A.M.P. will provide much-needed shelter, supplies, and safety. You can even set up shop to trade goods with other survivors.</p><h4>Fallout Worlds</h4><p>Play unique adventures in Appalachia with Fallout Worlds, which is an evolving set of features that give players the capability to play Fallout 76 in unique ways with customizable settings.</p>",
+        "weLove": "I've always wanted to play a Fallout game with other people and this game allows me to do that.  I also get to do building and there are definetly some survival mechanics to the game.  I enjoy that they have the same kinds of quests as in normal Fallout games, and there are definetly some that are really quirky. The power armor is a cool way to get a new type of gameplay and are really cool to stomp around Apalacia.  The character creator is really good as well.  Mr Giggles is a great addition to the world of Fallout 76.",
+        "weDontLove": "I don't like the fact that you have to pay to get a private server.  I think this should just be an option.  I don't mind playing with other players, but I would rather turn off PVP or only play with friends.  The menus are a little wonky, but playing the game for a little while should make it bearable. The main thing that I don't like about this game is the sheer amount of things you can pick up, and I have no idea if I need it or not.  I know there are Junk things, but I should be able to see that right away or something.",
         "additionalInfo": [
-            {"attr": "Attribute 11", "value": "thing 11"},
-            {"attr": "Attribute 12", "value": "thing 12"},
-            {"attr": "Attribute 13", "value": "thing 13"},
-            {"attr": "Attribute 14", "value": "thing 14"},
-            {"attr": "Attribute 15", "value": "thing 15"}
+            {"attr": "Multiplayer", "value": "Up to 24 people can be on a server at 1 time"},
+            {"attr": "Free to Play", "value": "After Purchase it is free to play, or you can pay for a subscription"},
+            {"attr": "Shooter", "value": "Blast things just the way you want, also has the VATS system."},
+            {"attr": "Crafting", "value": "If you love crafting there are many things in this game to make"},
+            {"attr": "Base Building", "value": "Create and move your base to different parts of the map."}
         ],
-        "additionalDescription": "This is for additional description"
+        "additionalDescription": ""
     },
     {
         "releaseDate": "Dec 13, 2013",
-        "platform": "PC",
+        "platform": "PC, Xbox, Playstation",
         "gameImage": "/images/games/7 Days to Die/7DaysToDie_index.webp",
-        "gameOverview": "A zombie survival game",
+        "gameOverview": "7 Days to Die is an open-world game that is a unique combination of first-person shooter, survival horror, tower defense, and role-playing games. Play the definitive zombie survival sandbox RPG that came first. Navezgane awaits!",
         "screenshots": [
             "/images/games/7 Days to Die/screenshots/screenshot1.webp",
             "/images/games/7 Days to Die/screenshots/screenshot2.webp",
@@ -57,24 +57,22 @@
         "title": "7 Days to Die",
         "slug": "7-days-to-die",
         "category": "1",
-        "description": "This is description for the second game<p>This is a test for a 2nd paragraph for the second game",
-        "features": "This is for features for the second game",
-        "weLove": "This is what we love about for the second game",
-        "weDontLove": "This is what we don't love for the second game",
+        "description": "With over 16 million copies sold, 7 Days has defined the survival genre, with unrivaled crafting and world-building content. Set in a brutally unforgiving post-apocalyptic world overrun by the undead, 7 Days is an open-world game that is a unique combination of first-person shooter, survival horror, tower defense, and role-playing games. It presents combat, crafting, looting, mining, exploration, and character growth, in a way that has seen a rapturous response from fans worldwide. Play the definitive zombie survival sandbox RPG that came first. Navezgane awaits!",
+        "features": "<ul><li>Explore - Huge, unique and rich environments, offering the freedom to play the game any way you want, featuring 5 unique biomes and worlds up to 100 square kilometers in size.</li><li>Craft – Handcraft and repair weapons, clothes, armor, tools, vehicles, and more with over 500 recipes. Learn more powerful recipes by finding schematics.</li><li>Build – Design your fort to include traps, electric power, auto turrets, automated doors, gadgets and defensive positions to survive the undead in a fully destructible and moldable world.</li><li>Cooperate or Compete – Work together to build settlements or against each other raiding other player’s bases, it’s really up to you in a wasteland where zombies and outlaws rule the land.</li><li>Create – Unleash your creativity with access to over 800 in-game items, and over 1,300 unique building blocks and a painting system that offers infinite possibilities.</li><li>Improve – Increase your skills with a multitude of perks under 5 main attributes. Gain additional skills by reading over 100 books. 7 Days to Die is the only true survival RPG.</li><li>Choose – Play the campaign world, or dive back in a randomly-generated world with cities, towns, lakes, mountains, valleys, roads, caves and over 550 unique locations.</li><li>Combat – Encounter nearly 60 unique zombie archetypes including special infected with unique behaviors and attacks progressing in difficulty to provide an infinite challenge.</li><li>Survive – Experience real hardcore survival mechanics with nearly 50 buffs, boosts and ailments that will impact the gameplay in ways that can both challenge and aid in your survival.</li><li>Destroy – Buildings and terrain formations can collapse under their own weight from structural damage or poor building design with real structural stability.</li><li>Loot – Scavenge the world for the best weapons, tools, and armor with 6 quality ranges providing thousands of permutations. Augment items with a multitude of mods.</li><li>Quest – Meet several Trader NPCs who buy and sell goods and offer quest jobs for rewards. Enjoy many unique quest types supported by over 550 locations.</li><li>Customize – Create your own character and customize your character further in-game with a huge selection of clothing and armor you can craft or loot in the world.</li><li>Drive – Enjoy the badass vehicle system where you find all the parts, learn the recipes, craft and customize your own bicycle, minibike, motorcycle, 4x4 or gyrocopters and ride with friends.</li><li>Farm or Hunt – Plant and grow gardens for sustainable resources or head out into the wilderness and hunt over a dozen unique wild animals.</li></ul>",
+        "weLove": "We have played many of 100s of hours in this game and it is very loved by us here at Decayed Dojo.  From the horde nights, to the scares, and also the building we love this game dearly.  The zombies are crazy looking, and the environments just keep getting better. The little stories that you find along the way from different POI (Point of Interests) like the house that has a cult in the basement and the mansion that has a secret underneath are amazing.  I also really like how they do each POI is a 'Vertical Dungeon' and really like how the game is built",
+        "weDontLove": "For as much as we love this game, we don't like many aspects of it.  Stamina is a big thing that is wrong with this game.  It feels like you are always out and the way they handle the regen and use of it is very difficult to master.  I don't like the game stage, loot stage, and other stages that they have in the game.  These are essentially a way to halt your progression until they feel you are ready to go.  For example if you have a loot stage of 20 or something low you will not, or at least have a super slim chance, of finding cool things. So you have to do trader quests and up your level and skill to get better loot.  I would think if I take on a huge dungeon I should get whatever loot was supposed to be in there. Another thing I don't like about this game is the death sickness you get.  I know there needs to be some sort of penalty, but I just don't think the one they have is a good one. Lastly we joke all the time about this, but it is in early access.  Not just normal early access, but for 10 years early access.  I have moved 3 times and have had 2 children and this thing is still not gold!",
         "additionalInfo": [
-            {"attr": "Attribute 21", "value": "thing 21"},
-            {"attr": "Attribute 22", "value": "thing 22"},
-            {"attr": "Attribute 23", "value": "thing 23"},
-            {"attr": "Attribute 24", "value": "thing 24"},
-            {"attr": "Attribute 25", "value": "thing 25"}
+            {"attr": "Multiplayer", "value": "On a dedicated server you can have as many as it can handle, looks like 100 might be a cap"},
+            {"attr": "Dedicated Servers", "value": "Many games don't have this now a days so its good to see it."},
+            {"attr": "Mods", "value": "There are many mods that can be installed to make the game even better"}
         ],
-        "additionalDescription": "This is for additional description for the second game"
+        "additionalDescription": "7 Days to Die thrusts players into the aftermath of the fall of civilization with only their wits and bare hands to survive. In this continually evolving title currently in alpha stage development, players must explore the open world alone or with friends to build tools, weapons and shelter against the dangers of the reanimated dead, infected wildlife and the world itself."
     },
     {
-        "releaseDate": "Dec 13, 2013",
-        "platform": "PC",
+        "releaseDate": "Dec 08, 2021",
+        "platform": "PC, Xbox",
         "gameImage": "/images/games/Halo Infinite/HaloInfinite_index.webp",
-        "gameOverview": "A halo game that is really over hyped",
+        "gameOverview": "The legendary Halo series returns with the most expansive Master Chief campaign yet and a ground-breaking free-to-play multiplayer experience",
         "screenshots": [
             "/images/games/Halo Infinite/screenshots/screenshot1.webp",
             "/images/games/Halo Infinite/screenshots/screenshot2.webp",
@@ -88,18 +86,16 @@
         "btnName": "Enter Zeta Halo",
         "title": "Halo Infinite",
         "slug": "halo-infinite",
-        "category": "1",
-        "description": "This is description for the third game<p>This is a test for a 2nd paragraph for the third game",
-        "features": "This is for features for the third game",
-        "weLove": "This is what we love about for the third game",
-        "weDontLove": "This is what we don't love for the third game",
+        "category": "2",
+        "description": "Master Chief finds himself on the Zeta Halo, a massive but badly damaged alien space station that's also an apocalyptic weapon. That's one reason why it's currently overrun with aliens hoping to turn it on so that they can wipe humanity from the universe. It's a good thing you've got the armor of a superhero, and the weapons of a supersoldier, as well as help from a somewhat familiar face. Set on a largely open world, this sci-fi first-person shooter not only has you shooting tons of these aliens, but also rescuing fellow human soldiers, invading enemy installations, and generally undermining the alien occupation in hopes of -- what else -- saving the galaxy.",
+        "features": "<h4>Network Campaign Co-Op and Mission Replay:</h4><p>Campaign Network Co-Op allows you and up to three friends to earn 14 new Achievements and take the fight to the Banished to experience the wonder of Zeta Halo, together across Xbox and PC.<p>With Mission Replay, you can relive your favorite moments, rediscover collectibles and explore the wonders of Zeta Halo on your own or with up to three other fireteam members!<h4>Become the Master Chief:</h4><p>When all hope is lost and humanity’s fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he’s ever faced. Step inside the armor of humanity’s greatest hero to experience an epic adventure and explore the massive scale of the Halo ring.<h4>Explore Zeta Halo:</h4><p>Halo Infinite offers the most expansive and adventure-filled Halo campaign to date set in the wide-open environment of the ancient ringworld, Zeta Halo. Explore the vast reaches of Installation 07, from stunning heights to mysterious depths below the ring. Rescue UNSC marines to gain reinforcements in your fight against a fearsome enemy known as “the Banished.”<h4>Defeat the Banished:</h4><p>Set after the events of Halo 5 and shortly following a crushing defeat, the UNSC fleet lies shattered and stranded on the surface of the heavily damaged Installation 07. Amongst the wreckage, a terrifying clan of Brute warriors, The Banished, now roam the damaged ringworld. Outmanned and outgunned, Master Chief must stop the Banished from repairing the Halo ring and claiming control of the galaxy’s greatest threat.<h4>PC Settings & Optimizations:</h4><p>Halo Infinite is built for PC. From advanced graphics settings, ultrawide/super ultrawide support and triple-key binds to features like dynamic scaling and variable framerates, Halo Infinite is the best Halo experience on PC to date.",
+        "weLove": "The open world concept of the game made a somewhat boring FPS trope breath new life into the genre.  The grappling hook really does change the game, as well as some of the other gadgets you get in the game. It really does make it a different game.  I really liked the pacing and some of the side quests. My favorite ones were the 'high value target' ones where a named enemy has to be fought and they are a lot harder than the other ones. The characters are pretty decent and the ending was serviceable. ",
+        "weDontLove": "I really wanted to like the new AI, but I really just wanted Cortana back.  I know it makes sence from a story point of view, or whatever, but I wish they didn't do what they did with Cortana.  I aboslutly despised that I had to wait almost a year to play the story mode.  I have played Campaign Coop halo since 2001 and I'll be damned if I don't get to experience this with my squad.  The multiplayer is alright, just wish it didn't have all the free to play garbage in it.  Im alright with the free to play, just not pay to get way better stuff.  If you can earn all things in game great! But if I need to spend money or do something outside the game to get an item, that sucks.",
         "additionalInfo": [
-            {"attr": "Attribute 31", "value": "thing 31"},
-            {"attr": "Attribute 32", "value": "thing 32"},
-            {"attr": "Attribute 33", "value": "thing 33"},
-            {"attr": "Attribute 34", "value": "thing 34"},
-            {"attr": "Attribute 35", "value": "thing 35"}
+            {"attr": "Multiplayer Co-Op", "value": "Up to 4 players take on the Banished"},
+            {"attr": "Free Multiplayer", "value": "As with all games now a days, free multiplayer"},
+            {"attr": "Cross Gen/Platform", "value": "Play with Xbox and pc"}
         ],
-        "additionalDescription": "This is for additional description for the third game"
+        "additionalDescription": ""
     }
 ]
