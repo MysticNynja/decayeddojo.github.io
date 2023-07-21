@@ -24,12 +24,26 @@
 </template>
 
 <script>
-  import blogData from '@/data/blog.json'
-    export default {
-        data() {
-            return {
-                blogData
-            }
+import blogData from '@/data/blog.json'
+export default {
+    data() {
+        return {
+            blogData, 
+        }
+    },
+    mounted(){
+        var test = [];
+        if(this.$route.query.tag){
+            this.blogData.forEach(blog => {
+                blog.tags.forEach(tag => {
+                    if(tag.toLowerCase() == this.$route.query.tag.toLowerCase()){
+                        test.push(blog);
+                    }
+                })
+            });
+
+            this.blogData = test;
         }
     }
+}
 </script>

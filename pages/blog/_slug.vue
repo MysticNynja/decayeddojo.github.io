@@ -27,7 +27,8 @@
                     </div>
                     <div class="my-8 space-x-3 text-white text-center flex items-center justify-center">
                         <div v-for="(tag, index) in blogData.tags" :key="index">
-                            <n-link to="/" class="px-4 py-2 border-secondary-80 bg-secondary-100 hover:bg-primary hover:border-primary transition-all border-2 border-solid relative rounded-md lowercase"> {{ tag }}</n-link>
+                            <n-link :to="{path: `/blog`,params: tag, query: { tag: tag }}"
+                                class="px-4 py-2 border-secondary-80 bg-secondary-100 hover:bg-primary hover:border-primary transition-all border-2 border-solid relative rounded-md lowercase"> {{ tag }}</n-link>
                         </div>
                     </div>
                     <div class="text-center">
