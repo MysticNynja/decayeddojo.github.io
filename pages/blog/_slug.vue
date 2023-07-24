@@ -34,11 +34,12 @@
                     <div class="text-center">
                         <img :src="blogData.imgLarge" alt="">
                     </div>
-                    <div class="content max-w-4xl m-auto mt-20">                    
+                    <div class="content max-w-4xl m-auto mt-20">                   
                         <div class="description">
                             <div class="mb-5" v-for="(elem, index) in blogData.content" :key="index">
                                 <h4 v-if="elem.h4" class="text-white xl:text-2xl lg:text-xl md:text-2xl sm:text-lg font-bold uppercase transition-all leading-9">{{ elem.h4 }}</h4>
-                                <p v-else-if="elem.p" class="leading-8">{{ elem.p }}</p>
+                                <p v-else-if="elem.p" v-html='elem.p' class="leading-8"></p>
+                                <a v-else-if="elem.a" v-html='elem.a' class="leading-8"></a>
                                 <img v-else-if="elem.img" class="rounded-3xl" :src="elem.img" alt="">
                                 <blockquote v-else-if="elem.blockquote" class="my-5"><p class="font-bold text-yellow italic lg:text-3xl text-xl">{{ elem.blockquote }}</p></blockquote>
                             </div>
