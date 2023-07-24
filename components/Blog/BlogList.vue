@@ -6,7 +6,7 @@
             <div v-for="(blog, index) in blogData" :key="index">
                 <div class="flex sm:items-center flex-col sm:flex-row">
                     <div class="lg:w-40 xl:w-52 2xl:w-52 md:w-44 sm:w-37 w-32 mb-7 sm:mb-0 flex-shrink-0">
-                        <n-link :to="`/blog/${blog.slug}`"><img :src="blog.imgSrc" :alt="blog.alt"></n-link>
+                        <n-link :to="`/blog/${blog.slug}`"><img class="rounded-lg" :src="blog.imgSrc" :alt="blog.alt"></n-link>
                     </div>
                     <div class="xl:ml-9 lg:ml-6 md:ml-9 ml-3 flex flex-col flex-1">
                         <span class="text-sm text-white font-exo font-normal mb-2 sm:mb-5"><i class="icofont-calendar text-primary mr-2"></i>{{blog.date}}</span>
