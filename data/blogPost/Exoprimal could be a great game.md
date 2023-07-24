@@ -55,7 +55,7 @@ Exoprimal launched on July 13th, 2023 worldwide. The game is currently available
 
 Exoprimal is expected to be one of the most exciting and innovative games of 2023, offering players a unique and exhilarating way to experience dinosaur action. With its stunning graphics, realistic physics, diverse gameplay options, cross-platform features, and constant content updates, Exoprimal is a game that dinosaur fans and action lovers should not miss.
 
-If you want to learn more about Exoprimal, you can visit its official website [here](https://www.exoprimal.com/en-us/), or follow its social media accounts on [Twitter](https://twitter.com/exoprimal), [Facebook](https://www.facebook.com/exoprimal), [Instagram](https://www.instagram.com/exoprimal/), [YouTube](https://www.youtube.com/channel/UCx0ZQlqyJXwQ0f1vW7Yy8Og), or [Discord](https://discord.gg/exoprimal).
+If you want to learn more about Exoprimal, you can visit its official website [here](https://www.exoprimal.com/en-us/), or follow its social media accounts on [Twitter](https://twitter.com/exoprimal), [Facebook](https://www.facebook.com/exoprimal), [Instagram](https://www.instagram.com/exoprimal/), or [Discord](https://discord.gg/exoprimal).
 
 
 
