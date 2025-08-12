@@ -26,6 +26,7 @@
     "tinacms": "^2.5.3"
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
     "fast-glob": "^3.3.2",
     "@tinacms/cli": "^1.7.3",
     "@types/react": "^18.3.3",
