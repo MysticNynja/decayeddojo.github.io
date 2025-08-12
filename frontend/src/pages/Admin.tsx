@@ -1,24 +1,19 @@
 import React from 'react'
 
-// Admin loader using Tina's dev server UI inside an iframe.
-// Start both servers with: yarn dev:cms
-// Tina GraphQL/Admin runs (by default) at http://localhost:4001/admin
+// Redirect to Tina's own Admin page (no iframe)
 export const Admin: React.FC = () => {
-  const tinaUrl = 'http://localhost:4001/admin'
+  React.useEffect(() => {
+    const url = 'http://localhost:4001/admin'
+    // Attempt redirect immediately
+    window.location.replace(url)
+  }, [])
+
   return (
-    <div className="min-h-screen bg-dojo-ink text-dojo-ice">
-      <div className="container-max py-6 space-y-4">
-        <h1 className="font-display text-2xl md:text-3xl text-dojo-neon">Tina Admin</h1>
-        <p className="text-white/70 text-sm">If you do not see the editor below, open it directly in a new tab:</p>
-        <p>
-          <a className="neon-btn" href={tinaUrl} target="_blank" rel="noreferrer">Open Tina Admin</a>
-        </p>
-      </div>
-      <div className="container-max pb-10">
-        <div className="w-full h-[70vh] border border-dojo-neon/30 rounded overflow-hidden bg-black/40">
-          <iframe title="Tina Admin" src={tinaUrl} className="w-full h-full" />
-        </div>
-      </div>
-    </div>
+    <section className="container-max py-10 md:py-16">
+      <h1 className="font-display text-2xl md:text-3xl text-dojo-neon">Opening Tina Admin…</h1>
+      <p className="text-white/70 mt-4">If you are not redirected automatically, click the button below:</p>
+      <a className="neon-btn mt-4 inline-block" href="http://localhost:4001/admin">Go to Tina Admin</a>
+      <p className="text-white/50 text-sm mt-6">Note: Run Tina server with <code>yarn tinadev</code> or <code>yarn dev:cms</code>.</p>
+    </section>
   )
 }

@@ -1,6 +1,12 @@
 import { defineConfig } from "tinacms";
 
 export default defineConfig({
+  // Required for Tina dev server to know where to write its admin bundle and find static assets
+  build: {
+    outputFolder: "admin",
+    publicFolder: "public",
+  },
+  // No Tina Cloud (git-based local editing)
   client: {
     branch: "main",
   },
