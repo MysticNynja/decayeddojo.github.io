@@ -1,26 +1,38 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import matter from 'gray-matter'
+import { marked } from 'marked'
+import dayjs from 'dayjs'
+
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+})
 
 export const Post: React.FC = () => {
   const { slug } = useParams()
   const [html, setHtml] = useState<string>('')
+  const [title, setTitle] = useState<string>('')
+  const [author, setAuthor] = useState<string>('')
+  const [date, setDate] = useState<string>('')
 
   useEffect(() => {
     const run = async () => {
       if (!slug) return
       try {
         const res = await fetch(`/content/posts/${slug}.md`)
+        if (!res.ok) throw new Error('Not found')
         const txt = await res.text()
-        // minimal markdown -> html (very naive). Later, we can add a markdown parser.
-        const escaped = txt
-          .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-          .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-          .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-          .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>')
-          .replace(/\*(.*)\*/gim, '<i>$1</i>')
-          .replace(/\n$/gim, '<br />')
-        setHtml(escaped)
+        const parsed = matter(txt)
+        const content = parsed.content || ''
+        const data = parsed.data as { title?: string; author?: string; date?: string }
+        setTitle(data?.title || slug)
+        setAuthor(data?.author || '')
+        setDate(data?.date || '')
+        const htmlStr = marked.parse(content)
+        setHtml(htmlStr as string)
       } catch (e) {
+        setTitle('Post not found')
         setHtml('<p>Post not found.</p>')
       }
     }
@@ -28,8 +40,14 @@ export const Post: React.FC = () => {
   }, [slug])
 
   return (
-    <section className="container-max py-10 md:py-16 prose prose-invert max-w-none">
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+    <section className="container-max py-10 md:py-16">
+      <h1 className="font-display text-2xl md:text-3xl text-dojo-neon mb-2">{title}</h1>
+      <div className="text-sm text-white/60 mb-6">
+        {author ? <span>By {author}</span> : null}
+        {author && date ? <span> • </span> : null}
+        {date ? <span>{dayjs(date).format('MMM D, YYYY')}</span> : null}
+      </div>
+      <article className="prose prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
     </section>
   )
 }

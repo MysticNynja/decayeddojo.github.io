@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import dayjs from 'dayjs'
 
 export type PostMeta = {
   slug: string
@@ -13,20 +14,18 @@ export const Blog: React.FC = () => {
   const [posts, setPosts] = useState<PostMeta[]>([])
 
   useEffect(() => {
-    // For now, list posts by fetching an index.json generated at build time or fallback to static listing
     const fetchIndex = async () => {
       try {
         const res = await fetch('/content/posts/index.json')
         if (res.ok) {
-          const data = await res.json()
-          setPosts(data)
+          const data = (await res.json()) as PostMeta[]
+          setPosts(
+            data.sort((a, b) => (new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime()))
+          )
           return
         }
       } catch {}
-      // fallback to a small hardcoded list if index missing
-      setPosts([
-        { slug: 'welcome', title: 'Welcome to Decayed Dojo', author: 'DecayedDojo' },
-      ])
+      setPosts([])
     }
     fetchIndex()
   }, [])
@@ -34,16 +33,31 @@ export const Blog: React.FC = () => {
   return (
     <section className="container-max py-10 md:py-16">
       <h2 className="font-display text-2xl md:text-3xl mb-6">Blog</h2>
-      <ul className="grid gap-4">
-        {posts.map((p) => (
-          <li key={p.slug} className="border border-dojo-neon/30 rounded p-4">
-            <Link className="text-dojo-teal hover:underline" to={`/blog/${p.slug}`}>
-              {p.title}
-            </Link>
-            {p.author && <div className="text-xs text-white/50 mt-1">By {p.author}</div>}
-          </li>
-        ))}
-      </ul>
+      {posts.length === 0 ? (
+        <div className="text-white/70">No posts yet. Add markdown files in public/content/posts.</div>
+      ) : (
+        <ul className="grid gap-4">
+          {posts.map((p) => (
+            <li key={p.slug} className="border border-dojo-neon/30 rounded p-4">
+              <Link className="text-dojo-teal hover:underline text-lg" to={`/blog/${p.slug}`}>
+                {p.title}
+              </Link>
+              <div className="text-xs text-white/50 mt-1">
+                {p.author ? <span>By {p.author}</span> : null}
+                {p.author && p.date ? <span> • </span> : null}
+                {p.date ? <span>{dayjs(p.date).format('MMM D, YYYY')}</span> : null}
+              </div>
+              {p.tags && p.tags.length > 0 ? (
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {p.tags.map((t) => (
+                    <span key={t} className="text-[10px] uppercase tracking-wide px-2 py-0.5 border border-dojo-neon/30 rounded">{t}</span>
+                  ))}
+                </div>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   )
 }
