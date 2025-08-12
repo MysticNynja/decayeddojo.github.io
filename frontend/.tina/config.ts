@@ -16,7 +16,7 @@ export default defineConfig({
       {
         label: "Posts",
         name: "post",
-        path: "content/posts",
+        path: "public/content/posts",
         format: "md",
         ui: {
           defaultItem: {
