@@ -25,9 +25,9 @@ export const Post: React.FC = () => {
         const res = await fetch(url, { cache: 'no-store' })
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const txt = await res.text()
-        const parsed = matter(txt)
-        const content = parsed.content || ''
-        const data = parsed.data as { title?: string; author?: string; date?: string }
+        const parsed = fm<{ title?: string; author?: string; date?: string; tags?: string[] }>(txt)
+        const content = parsed.body || ''
+        const data = parsed.attributes || {}
         setTitle(data?.title || slug)
         setAuthor(data?.author || '')
         setDate(data?.date || '')
