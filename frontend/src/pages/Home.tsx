@@ -7,7 +7,7 @@ export const Home: React.FC = () => {
       <div className="text-center space-y-6">
         <h1 className="font-display text-3xl md:text-5xl text-dojo-neon">Not Old, Just Old School</h1>
         <p className="text-dojo-ice/80 max-w-2xl mx-auto">
-          Retro Japanese vibes for modern gaming culture. Home to streamers SxySamurai and MysticNynja.
+          Home to streamers SxySamurai and MysticNynja.
         </p>
         <div className="flex items-center justify-center gap-4">
           <Link className="neon-btn" to="/blog">Read the Blog</Link>
