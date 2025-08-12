@@ -1,6 +1,5 @@
 import { defineConfig } from "tinacms";
 
-// Git-based local content editing. In this environment, Tina Admin will work when running locally with `yarn tina:dev`.
 export default defineConfig({
   client: {
     branch: "main",

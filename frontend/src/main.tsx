@@ -9,6 +9,7 @@ import { Post } from './pages/Post'
 import { About } from './pages/About'
 import { Streams } from './pages/Streams'
 import { Store } from './pages/Store'
+import { Admin } from './pages/Admin'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: 'about', element: <About /> },
     ],
   },
+  { path: '/admin/*', element: <Admin /> },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
