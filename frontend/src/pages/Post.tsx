@@ -20,8 +20,9 @@ export const Post: React.FC = () => {
     const run = async () => {
       if (!slug) return
       try {
-        const res = await fetch(`/content/posts/${slug}.md`)
-        if (!res.ok) throw new Error('Not found')
+        const url = `/content/posts/${slug}.md?t=${Date.now()}`
+        const res = await fetch(url, { cache: 'no-store' })
+        if (!res.ok) throw new Error(`Status ${res.status}`)
         const txt = await res.text()
         const parsed = matter(txt)
         const content = parsed.content || ''
@@ -31,9 +32,9 @@ export const Post: React.FC = () => {
         setDate(data?.date || '')
         const htmlStr = marked.parse(content)
         setHtml(htmlStr as string)
-      } catch (e) {
+      } catch (e: any) {
         setTitle('Post not found')
-        setHtml('<p>Post not found.</p>')
+        setHtml(`<p>Post not found. ${e?.message || ''}</p>`) 
       }
     }
     run()
