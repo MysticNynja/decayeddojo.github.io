@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import matter from 'gray-matter'
+// gray-matter uses Buffer in the browser in older versions; ensure we avoid Buffer usage by only parsing strings.
+
 import { marked } from 'marked'
 import dayjs from 'dayjs'
 
