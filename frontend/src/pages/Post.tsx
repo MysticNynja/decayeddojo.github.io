@@ -25,13 +25,31 @@ export const Post: React.FC = () => {
         const res = await fetch(url, { cache: 'no-store' })
         if (!res.ok) throw new Error(`Status ${res.status}`)
         const txt = await res.text()
-        const parsed = fm<{ title?: string; author?: string; date?: string; tags?: string[] }>(txt.trim())
-        const content = parsed.body || ''
-        const data = parsed.attributes || {}
-        setTitle(data?.title || slug)
-        setAuthor(data?.author || '')
-        setDate(data?.date || '')
-        const htmlStr = marked.parse(content)
+        // Minimal frontmatter parser to avoid Buffer polyfills
+        // ---\nYAML\n---\ncontent
+        let fmTitle = ''
+        let fmAuthor = ''
+        let fmDate = ''
+        let fmTags: string[] | undefined
+        let body = txt
+        if (txt.startsWith('---')) {
+          const end = txt.indexOf('\n---', 3)
+          if (end !== -1) {
+            const yamlBlock = txt.slice(3, end + 1) // includes trailing \n
+            try {
+              const meta = yaml.load(yamlBlock) as any
+              fmTitle = meta?.title || ''
+              fmAuthor = meta?.author || ''
+              fmDate = meta?.date || ''
+              fmTags = Array.isArray(meta?.tags) ? meta.tags : meta?.tags ? [meta.tags] : undefined
+            } catch {}
+            body = txt.slice(end + 4)
+          }
+        }
+        setTitle(fmTitle || slug)
+        setAuthor(fmAuthor || '')
+        setDate(fmDate || '')
+        const htmlStr = marked.parse(body)
         setHtml(htmlStr as string)
       } catch (e: any) {
         setTitle('Post not found')
