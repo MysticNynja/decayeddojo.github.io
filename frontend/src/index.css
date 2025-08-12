@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-image: theme('backgroundImage.grid');
+  background-size: theme('backgroundSize.grid');
+  background-position: 0 0, 12px 12px;
+}
+
+.container-max {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.brand-title {
+  @apply font-display text-2xl md:text-3xl text-dojo-teal drop-shadow-[0_0_8px_rgba(33,230,193,0.8)] tracking-wider;
+}
+
+.neon-btn {
+  @apply px-4 py-2 rounded border border-dojo-neon text-dojo-ice hover:text-white hover:bg-dojo-neon/20 shadow-neon transition;
+}
