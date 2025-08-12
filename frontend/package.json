@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "tina:dev": "tinacms dev -c \.tina/config.ts",
-    "tina:build": "tinacms build -c \.tina/config.ts"
+    "tina:dev": "tinacms dev -c .tina/config.ts",
+    "tina:build": "tinacms build -c .tina/config.ts"
   },
   "dependencies": {
     "react": "^18.3.1",
