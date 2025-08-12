@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import fm from 'front-matter'
+import yaml from 'js-yaml'
 
 import { marked } from 'marked'
 import dayjs from 'dayjs'
