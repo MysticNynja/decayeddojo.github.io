@@ -1,12 +1,20 @@
 import { defineConfig } from "tinacms";
 
+function slugify(input: string) {
+  return (input || '')
+    .toString()
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+}
+
 export default defineConfig({
-  // Required for Tina dev server to know where to write its admin bundle and find static assets
   build: {
     outputFolder: "admin",
     publicFolder: "public",
   },
-  // No Tina Cloud (git-based local editing)
   client: {
     branch: "main",
   },
@@ -28,6 +36,10 @@ export default defineConfig({
             title: "New Post",
             author: "",
             date: new Date().toISOString(),
+          },
+          // Make the filename follow the title (slug) automatically
+          filename: {
+            slugify: (values) => slugify(values?.title || "untitled"),
           },
           router: ({ document }) => `/blog/${document._sys.filename}`,
         },
