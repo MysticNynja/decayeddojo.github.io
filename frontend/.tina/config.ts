@@ -16,7 +16,6 @@ export default defineConfig({
     publicFolder: "public",
   },
   client: {
-    branch: "main",
   },
   media: {
     tina: {
@@ -32,12 +31,6 @@ export default defineConfig({
         path: "public/content/posts",
         format: "md",
         ui: {
-          defaultItem: {
-            title: "New Post",
-            author: "",
-            date: new Date().toISOString(),
-          },
-          // Make the filename follow the title (slug) automatically
           filename: {
             slugify: (values) => slugify(values?.title || "untitled"),
           },
