@@ -17,13 +17,12 @@
     "web-vitals": "^2.1.4",
     "react-router-dom": "^6.14.2",
     "@tinacms/cli": "^1.5.29",
-    "tinacms": "^1.5.20",
-    "tinacms-ws": "^1.0.0"
+    "tinacms": "^1.5.20"
   },
   "scripts": {
     "start": "npm-run-all --parallel tina-dev react-scripts-start",
     "react-scripts-start": "react-scripts start",
-    "tina-dev": "tinacms dev -c \"npm run react-scripts-start\"",
+    "tina-dev": "tinacms dev -c \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

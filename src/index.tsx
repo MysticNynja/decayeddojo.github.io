@@ -3,16 +3,43 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { TinaProvider } from 'tinacms';
+import { TinaProvider, TinaCMS } from 'tinacms';
+import { createClient } from 'tinacms-ws';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-root.render(
-  <React.StrictMode>
-    <TinaProvider>
+
+const AppWrapper = () => {
+  const client = createClient({
+    url: 'ws://localhost:4001/graphql',
+    token: process.env.REACT_APP_TINA_TOKEN || "",
+  });
+
+  const cms = React.useMemo(
+    () =>
+      new TinaCMS({
+        enabled: true,
+        apis: {
+          tina: client,
+        },
+        sidebar: {
+          position: 'displace',
+        },
+      }),
+    [client]
+  );
+
+  return (
+    <TinaProvider cms={cms}>
       <App />
     </TinaProvider>
+  );
+};
+
+root.render(
+  <React.StrictMode>
+    <AppWrapper />
   </React.StrictMode>
 );
 

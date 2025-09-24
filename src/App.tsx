@@ -6,21 +6,8 @@ import Streams from './pages/Streams';
 import Vods from './pages/Vods';
 import Admin from './pages/Admin';
 import './App.css';
-import { useCMS } from 'tinacms';
-import { createClient } from 'tinacms-ws';
 
 function App() {
-  const client = createClient({
-    url: 'ws://localhost:4001/graphql',
-    // Make sure your client token is stored in an environment variable!
-    token: process.env.REACT_APP_TINA_TOKEN || "",
-  });
-
-  const cms = useCMS();
-  React.useEffect(() => {
-    cms.apis.tina = client;
-  }, [cms, client]);
-
   return (
     <Router>
       <div className="bg-gray-900 text-white min-h-screen font-press-start">
