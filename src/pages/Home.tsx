@@ -1,24 +1,34 @@
-import React from 'react';
-
-const Home = () => {
+// src/pages/Home.tsx
+export default function Home() {
   return (
-    <div>
-      <p className="text-2xl leading-loose">
-        The term 道場 (dōjō) on the Decayed Dojo site is used with a modern, stylized twist. Traditionally, 道場 refers to a “place of the way”—a training hall for martial arts or spiritual discipline. But here, it’s been reimagined as a digital hub for retro gaming culture and community.
-      </p>
-      <h2 className="text-4xl mt-8 mb-4 text-yellow-400">Featured Streamers:</h2>
-      <ul className="list-disc list-inside text-2xl">
-        <li>SxySamurai: An arcade brawler expert, echoing the dojo’s combat roots.</li>
-        <li>MysticNynja: A stealth strategist, reinforcing the martial arts theme.</li>
-      </ul>
-      <p className="text-2xl mt-8 leading-loose">
-        Dojo Spirit: The phrase “Dojo spirit—hosts, guides, and vibes” suggests mentorship, camaraderie, and shared passion—core values of a traditional dojo, now applied to gaming.
-      </p>
-      <p className="text-2xl mt-8 leading-loose">
-        So in this context, 道場 is less about physical training and more about cultivating skill, style, and community in the digital realm. It’s a clever cultural remix: not old, just old school.
-      </p>
-    </div>
-  );
-};
+    <main className="bg-brand-bg text-brand-text font-press-start min-h-screen px-4 py-8">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl text-brand-accent drop-shadow-md">Decayed Dojo</h1>
+        <p className="mt-4 text-sm text-brand-accent-alt">Where retro warriors stream, blog, and battle bugs</p>
+      </header>
 
-export default Home;
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="border border-brand-border p-4 rounded bg-[#1a1a1a]">
+          <h2 className="text-lg text-brand-accent mb-2">📝 Latest Blog Posts</h2>
+          <ul className="list-disc list-inside text-sm">
+            <li>“Debugging Like a Ninja”</li>
+            <li>“Pixel-perfect TinaCMS Setup”</li>
+            <li>“Streamer Spotlight: SxySamurai”</li>
+          </ul>
+        </div>
+
+        <div className="border border-brand-border p-4 rounded bg-[#1a1a1a]">
+          <h2 className="text-lg text-brand-accent mb-2">🎥 Featured Streamers</h2>
+          <ul className="list-disc list-inside text-sm">
+            <li>SxySamurai – Arcade Brawler</li>
+            <li>MysticNynja – Stealth Strategist</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer className="mt-12 text-center text-xs text-[#888]">
+        <p>Powered by TinaCMS · Built with React + Tailwind · © 2025 Decayed Dojo</p>
+      </footer>
+    </main>
+  );
+}
