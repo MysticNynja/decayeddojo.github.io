@@ -1,22 +1,18 @@
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 export default defineConfig({
   branch,
-  // Get this from app.tina.io
-  clientId: process.env.REACT_APP_TINA_CLIENT_ID || "",
-  // Get this from app.tina.io
-  token: process.env.REACT_APP_TINA_TOKEN || "",
-
+  clientId: process.env.REACT_APP_TINA_CLIENT_ID!,
+  token: process.env.REACT_APP_TINA_TOKEN!,
   build: {
     outputFolder: "admin",
     publicFolder: "public",
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "public/uploads",
       publicFolder: "public",
     },
   },
@@ -26,6 +22,7 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "content/posts",
+        format: "mdx",
         fields: [
           {
             type: "string",
@@ -35,12 +32,28 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "string",
+            name: "author",
+            label: "Author",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            required: true,
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
             isBody: true,
           },
         ],
+        ui: {
+          // This is an DEMO router. You can remove this to fit your needs
+          router: ({ document }) => `/blog/${document._sys.filename}`,
+        },
       },
     ],
   },

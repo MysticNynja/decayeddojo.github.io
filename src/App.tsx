@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Streams from './pages/Streams';
 import Vods from './pages/Vods';
-import Admin from './pages/Admin';
+import AdminPage from './pages/Admin';
 import './App.css';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         </header>
         <main className="container mx-auto p-4">
           <Routes>
-            <Route path="/admin/*" element={<Admin />} />
+            <Route path="/admin/*" element={<AdminPage />} />
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/streams" element={<Streams />} />
