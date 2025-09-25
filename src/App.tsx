@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="bg-gray-900 text-white min-h-screen font-press-start">
+      <div className="bg-gray-900 text-white min-h-screen font-press-start flex flex-col">
         <header className="border-b-8 border-double border-red-500 p-4">
           <div className="container mx-auto flex justify-between items-center">
             <h1 className="text-5xl font-bold text-yellow-400">Decayed Dojo</h1>
@@ -24,7 +24,7 @@ function App() {
             </nav>
           </div>
         </header>
-        <main className="container mx-auto p-4">
+        <main className="container mx-auto p-4 flex-grow">
           <Routes>
             <Route path="/admin/*" element={<AdminPage />} />
             <Route path="/" element={<Home />} />
@@ -34,7 +34,7 @@ function App() {
           </Routes>
         </main>
         <footer className="border-t-8 border-double border-red-500 p-4 text-center">
-          <p>&copy; 2024 Decayed Dojo</p>
+          <p>Fueled by hatred, caffeine, metal and the love of the game © 2025 Decayed Dojo</p>
         </footer>
       </div>
     </Router>

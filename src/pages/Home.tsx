@@ -4,35 +4,55 @@ export default function Home() {
     <main className="bg-brand-bg text-brand-text font-press-start min-h-screen">
       <header className="text-center py-8 border-b-4 border-brand-border">
         <h1 className="text-5xl text-brand-accent drop-shadow-md">Decayed Dojo</h1>
-        <p className="mt-4 text-md text-brand-accent-alt">Where retro warriors stream, blog, and battle bugs</p>
+        <p className="mt-4 text-md text-brand-accent-alt">Not old, but old school</p>
       </header>
 
       {/* Hero Section */}
       <section className="text-center my-12 px-4">
         <h2 className="text-3xl text-brand-accent-alt mb-4">The Digital Scroll of Lost Arts</h2>
-        <p className="max-w-3xl mx-auto text-sm leading-loose">
-          In the neon-drenched alleys of the internet, a forgotten dojo stands. Here, streamers and bloggers unearth forbidden techniques, debug ancient code, and master the art of retro gaming. This is not just a blog; it's a training ground.
-        </p>
       </section>
 
       {/* Featured Stories */}
       <section className="px-4 md:px-8 my-16">
         <h2 className="text-2xl text-brand-accent mb-8 border-b-2 border-brand-border pb-2">Featured Stories</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-12">
           {/* Card 1 */}
-          <div className="border-2 border-brand-border p-4 bg-[#1a1a1a] hover:border-brand-accent-alt transition-all duration-150">
-            <h3 className="text-lg text-brand-accent mb-2">Debugging Like a Ninja</h3>
-            <p className="text-sm">Vanish bugs from your codebase with stealth and precision. A guide to silent, deadly debugging.</p>
+          <div className="bg-[#1a1a1a] border-2 border-brand-border flex">
+            <div className="w-1/3 bg-brand-border flex items-center justify-center">
+              <span className="text-brand-accent-alt text-lg">IMAGE</span>
+            </div>
+            <div className="w-2/3 p-6 relative">
+              <h3 className="text-xl text-brand-accent mb-2">The Unspoken Genius of Chrono Trigger's Battle System</h3>
+              <div className="flex items-center text-xs mb-4">
+                <span className="text-brand-accent-alt mr-4">JAN 12</span>
+                <span>by SxySamurai</span>
+              </div>
+              <p className="text-sm mb-6">A deep dive into the Active Time Battle 2.0 and how it revolutionized RPG combat forever.</p>
+              <div className="absolute bottom-4 right-4 flex space-x-2">
+                <button className="text-xs bg-brand-accent hover:bg-brand-accent-alt text-brand-bg font-bold py-1 px-2">READ</button>
+                <button className="text-xs bg-brand-border hover:bg-brand-accent-alt py-1 px-2">LIKE</button>
+                <button className="text-xs bg-brand-border hover:bg-brand-accent-alt py-1 px-2">SHARE</button>
+              </div>
+            </div>
           </div>
           {/* Card 2 */}
-          <div className="border-2 border-brand-border p-4 bg-[#1a1a1a] hover:border-brand-accent-alt transition-all duration-150">
-            <h3 className="text-lg text-brand-accent mb-2">Pixel-perfect TinaCMS Setup</h3>
-            <p className="text-sm">Integrate TinaCMS into your retro-themed site without breaking the aesthetic. A step-by-step tutorial.</p>
-          </div>
-          {/* Card 3 */}
-          <div className="border-2 border-brand-border p-4 bg-[#1a1a1a] hover:border-brand-accent-alt transition-all duration-150">
-            <h3 className="text-lg text-brand-accent mb-2">Streamer Spotlight: SxySamurai</h3>
-            <p className="text-sm">Meet the arcade brawler who dominates the leaderboards with old-school cool.</p>
+          <div className="bg-[#1a1a1a] border-2 border-brand-border flex">
+            <div className="w-1/3 bg-brand-border flex items-center justify-center">
+              <span className="text-brand-accent-alt text-lg">IMAGE</span>
+            </div>
+            <div className="w-2/3 p-6 relative">
+              <h3 className="text-xl text-brand-accent mb-2">Why Your Favorite 90s Anime Still Holds Up</h3>
+              <div className="flex items-center text-xs mb-4">
+                <span className="text-brand-accent-alt mr-4">JAN 10</span>
+                <span>by MysticNynja</span>
+              </div>
+              <p className="text-sm mb-6">From Cowboy Bebop to Evangelion, we explore the timeless themes and art that make 90s anime iconic.</p>
+              <div className="absolute bottom-4 right-4 flex space-x-2">
+                <button className="text-xs bg-brand-accent hover:bg-brand-accent-alt text-brand-bg font-bold py-1 px-2">READ</button>
+                <button className="text-xs bg-brand-border hover:bg-brand-accent-alt py-1 px-2">LIKE</button>
+                <button className="text-xs bg-brand-border hover:bg-brand-accent-alt py-1 px-2">SHARE</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -72,9 +92,6 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mt-12 text-center text-xs text-[#888] pb-8">
-        <p>Powered by TinaCMS · Built with React + Tailwind · © 2025 Decayed Dojo</p>
-      </footer>
     </main>
   );
 }
