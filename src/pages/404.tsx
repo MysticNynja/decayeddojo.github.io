@@ -1,16 +1,15 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ErrorPage() {
-  const lineRefs = [
-    useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
-  ];
-  const lines = ['I AM', 'ERROR.', '404'];
+  // make the refs array stable across renders
+  const lineRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   useEffect(() => {
-    lineRefs.forEach(ref => {
-      if (ref.current) ref.current.textContent = '';
+    const lines = ['I AM', 'ERROR.', '404']; // moved inside effect so it's stable for the hook
+
+    lineRefs.current.forEach(ref => {
+      if (ref) ref.textContent = '';
     });
 
     let lineIndex = 0;
@@ -18,7 +17,7 @@ export default function ErrorPage() {
 
     const interval = setInterval(() => {
       const currentLine = lines[lineIndex];
-      const el = lineRefs[lineIndex].current!;
+      const el = lineRefs.current[lineIndex]!;
       if (charIndex < currentLine.length) {
         el.textContent += currentLine[charIndex++];
       } else {
@@ -29,7 +28,7 @@ export default function ErrorPage() {
     }, 80);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // safe: lineRefs is a ref (stable), lines is defined inside effect
 
   return (
     <div className="flex flex-col">
@@ -56,27 +55,27 @@ export default function ErrorPage() {
                 textShadow: '3px 3px 0px #2038ec',
             }}
             >
-            <div ref={lineRefs[0]} />
-            <div ref={lineRefs[1]} />
-            <div ref={lineRefs[2]} />
+            <div ref={el => (lineRefs.current[0] = el)} />
+            <div ref={el => (lineRefs.current[1] = el)} />
+            <div ref={el => (lineRefs.current[2] = el)} />
           </div>
         </div>
         {/* MD layout */}
         <div className="hidden md:flex lg:hidden xl:hidden flex-col items-center justify-center h-full text-center">
           <h1 className="text-3xl text-red-500">404</h1>
           <p className="text-xl mt-2">This dojo has decayed.</p>
-          <a href="/" className="mt-4 text-blue-400 underline text-lg">
+          <Link to="/" className="mt-4 text-blue-400 underline text-lg">
             Return to Shrine
-          </a>
+          </Link>
         </div>
 
         {/* SM + XS layout */}
         <div className="flex md:hidden flex-col items-center justify-center h-full text-center">
           <h1 className="text-xl text-red-500">404</h1>
           <p className="text-base mt-2">Page not found.</p>
-          <a href="/" className="mt-4 text-blue-400 underline text-sm">
+          <Link to="/" className="mt-4 text-blue-400 underline text-sm">
             Go Home
-          </a>
+          </Link>
         </div>
       </main>
     </div>

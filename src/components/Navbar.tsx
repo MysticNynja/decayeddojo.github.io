@@ -43,13 +43,14 @@ export default function Navbar({ status = "Pre-recorded" }) {
           { label: 'Streams', href: '/streams' },
           { label: 'VODs', href: '/vods' },
         ].map(({ label, href }) => (
+
           <li key={label}>
-            <a
-              href={href}
+            <Link
+              to={href}
               className="hover:text-brand-accent-alt transition-all duration-150 hover:translate-x-[1px] hover:translate-y-[1px]"
             >
               {label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
