@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="bg-brand-bg text-brand-text font-press-start min-h-screen flex flex-col">
-        <Navbar status='offline'/>
+        <Navbar status='offlineS'/>
         <main className="flex-grow">
           <Routes>
             <Route path="/admin/*" element={<AdminPage />} />
