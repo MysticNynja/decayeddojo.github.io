@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ErrorPage() {
   // make the refs array stable across renders
   const lineRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const lines = useMemo(() => ['I AM', 'ERROR.', '404'], []);
 
   useEffect(() => {
-    const lines = ['I AM', 'ERROR.', '404']; // moved inside effect so it's stable for the hook
-
+    // lines is stable via useMemo; include it in deps below
     lineRefs.current.forEach(ref => {
       if (ref) ref.textContent = '';
     });
@@ -28,7 +28,7 @@ export default function ErrorPage() {
     }, 80);
 
     return () => clearInterval(interval);
-  }, []); // safe: lineRefs is a ref (stable), lines is defined inside effect
+  }, [lineRefs, lines]); // include deps so eslint rule is satisfied
 
   return (
     <div className="flex flex-col">
