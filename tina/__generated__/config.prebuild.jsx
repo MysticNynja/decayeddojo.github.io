@@ -1,20 +1,19 @@
+// tina/config.ts
 import { defineConfig } from "tinacms";
-
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-
-export default defineConfig({
+var branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+var config_default = defineConfig({
   branch,
-  clientId: process.env.REACT_APP_TINA_CLIENT_ID!,
-  token: process.env.REACT_APP_TINA_TOKEN!,
+  clientId: process.env.REACT_APP_TINA_CLIENT_ID,
+  token: process.env.REACT_APP_TINA_TOKEN,
   build: {
     outputFolder: "admin",
-    publicFolder: "public",
+    publicFolder: "public"
   },
   media: {
     tina: {
       mediaRoot: "uploads",
-      publicFolder: "public",
-    },
+      publicFolder: "public"
+    }
   },
   schema: {
     collections: [
@@ -29,32 +28,35 @@ export default defineConfig({
             name: "title",
             label: "Title",
             isTitle: true,
-            required: true,
+            required: true
           },
           {
             type: "string",
             name: "author",
             label: "Author",
-            required: true,
+            required: true
           },
           {
             type: "datetime",
             name: "date",
             label: "Date",
-            required: true,
+            required: true
           },
           {
             type: "rich-text",
             name: "body",
             label: "Body",
-            isBody: true,
-          },
+            isBody: true
+          }
         ],
         ui: {
           // This is an DEMO router. You can remove this to fit your needs
-          router: ({ document }) => `/blog/${document._sys.filename}`,
-        },
-      },
-    ],
-  },
+          router: ({ document }) => `/blog/${document._sys.filename}`
+        }
+      }
+    ]
+  }
 });
+export {
+  config_default as default
+};
