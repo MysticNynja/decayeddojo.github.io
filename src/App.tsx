@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Blog from './pages/Blog';
+import BlogPage from './pages/BlogPage';
+import BlogPost from './pages/BlogPost';
 import Streams from './pages/Streams';
 import Vods from './pages/Vods';
 import AdminPage from './pages/Admin';
@@ -20,7 +21,8 @@ function App() {
           <Routes>
             <Route path="/admin/*" element={<AdminPage />} />
             <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/blog" element={<BlogPage />} />
             <Route path="/streams" element={<Streams />} />
             <Route path="/vods" element={<Vods />} />
             <Route path="*" element={<ErrorPage />} />

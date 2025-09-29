@@ -18,8 +18,8 @@ var config_default = defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
+        name: "blog",
+        label: "Blog",
         path: "content/posts",
         format: "mdx",
         fields: [
@@ -43,10 +43,69 @@ var config_default = defineConfig({
             required: true
           },
           {
-            type: "rich-text",
+            label: "Content",
             name: "body",
-            label: "Body",
-            isBody: true
+            type: "rich-text",
+            isBody: true,
+            templates: [
+              {
+                name: "Heading",
+                label: "Heading",
+                fields: [
+                  {
+                    type: "string",
+                    name: "heading_text",
+                    label: "Heading Text"
+                  }
+                ]
+              },
+              {
+                name: "Blockquote",
+                label: "Blockquote",
+                fields: [
+                  {
+                    name: "children",
+                    label: "Quote",
+                    type: "rich-text"
+                  },
+                  {
+                    name: "author",
+                    label: "Author",
+                    type: "string"
+                  }
+                ]
+              },
+              {
+                name: "Image",
+                label: "Image",
+                fields: [
+                  {
+                    name: "src",
+                    label: "Image Source",
+                    type: "image"
+                  },
+                  {
+                    name: "alt",
+                    label: "Alt Text",
+                    type: "string"
+                  }
+                ]
+              },
+              {
+                name: "TextBlock",
+                label: "TextBlock",
+                fields: [
+                  {
+                    type: "string",
+                    name: "text",
+                    label: "Text",
+                    ui: {
+                      component: "textarea"
+                    }
+                  }
+                ]
+              }
+            ]
           }
         ],
         ui: {
