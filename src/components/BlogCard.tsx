@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface BlogCardProps {
   title: string;
@@ -26,12 +27,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, author, date, description, i
           <h3 className="text-xl text-brand-accent font-medium mb-2">{title}</h3>
 
           {/* Author pill */}
-          <a
-            href="#"
-            className="inline-block text-xs bg-brand-border text-brand-accent-alt px-3 py-1 rounded-pixel mb-4 border border-brand-accent hover:bg-brand-accent transition shadow-pixel"
-          >
+          <Link to={'/'} className="inline-block text-xs bg-brand-border text-brand-accent-alt px-3 py-1 rounded-pixel mb-4 border border-brand-accent hover:bg-brand-accent transition shadow-pixel">
             by {author}
-          </a>
+          </Link>
 
           <p className="text-sm text-brand-muted mb-6">{description}</p>
         </div>
