@@ -54,12 +54,12 @@ type Query {
   collections: [Collection!]!
   node(id: String): Node!
   document(collection: String, relativePath: String): DocumentNode!
-  blog(relativePath: String): Blog!
-  blogConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: BlogFilter): BlogConnection!
+  post(relativePath: String): Post!
+  postConnection(before: String, after: String, first: Float, last: Float, sort: String, filter: PostFilter): PostConnection!
 }
 
 input DocumentFilter {
-  blog: BlogFilter
+  post: PostFilter
 }
 
 type DocumentConnectionEdges {
@@ -85,9 +85,9 @@ type Collection {
   documents(before: String, after: String, first: Float, last: Float, sort: String, filter: DocumentFilter, folder: String): DocumentConnection!
 }
 
-union DocumentNode = Blog | Folder
+union DocumentNode = Post | Folder
 
-type Blog implements Node & Document {
+type Post implements Node & Document {
   title: String!
   author: String!
   date: String!
@@ -112,60 +112,28 @@ input DatetimeFilter {
   in: [String]
 }
 
-input BlogBodyHeadingFilter {
-  heading_text: StringFilter
-}
-
 input RichTextFilter {
   startsWith: String
   eq: String
   exists: Boolean
 }
 
-input BlogBodyBlockquoteFilter {
-  children: RichTextFilter
-  author: StringFilter
-}
-
-input ImageFilter {
-  startsWith: String
-  eq: String
-  exists: Boolean
-  in: [String]
-}
-
-input BlogBodyImageFilter {
-  src: ImageFilter
-  alt: StringFilter
-}
-
-input BlogBodyTextBlockFilter {
-  text: StringFilter
-}
-
-input BlogBodyFilter {
-  Heading: BlogBodyHeadingFilter
-  Blockquote: BlogBodyBlockquoteFilter
-  Image: BlogBodyImageFilter
-  TextBlock: BlogBodyTextBlockFilter
-}
-
-input BlogFilter {
+input PostFilter {
   title: StringFilter
   author: StringFilter
   date: DatetimeFilter
-  body: BlogBodyFilter
+  body: RichTextFilter
 }
 
-type BlogConnectionEdges {
+type PostConnectionEdges {
   cursor: String!
-  node: Blog
+  node: Post
 }
 
-type BlogConnection implements Connection {
+type PostConnection implements Connection {
   pageInfo: PageInfo!
   totalCount: Float!
-  edges: [BlogConnectionEdges]
+  edges: [PostConnectionEdges]
 }
 
 type Mutation {
@@ -174,20 +142,20 @@ type Mutation {
   deleteDocument(collection: String, relativePath: String!): DocumentNode!
   createDocument(collection: String, relativePath: String!, params: DocumentMutation!): DocumentNode!
   createFolder(collection: String, relativePath: String!): DocumentNode!
-  updateBlog(relativePath: String!, params: BlogMutation!): Blog!
-  createBlog(relativePath: String!, params: BlogMutation!): Blog!
+  updatePost(relativePath: String!, params: PostMutation!): Post!
+  createPost(relativePath: String!, params: PostMutation!): Post!
 }
 
 input DocumentUpdateMutation {
-  blog: BlogMutation
+  post: PostMutation
   relativePath: String
 }
 
 input DocumentMutation {
-  blog: BlogMutation
+  post: PostMutation
 }
 
-input BlogMutation {
+input PostMutation {
   title: String
   author: String
   date: String

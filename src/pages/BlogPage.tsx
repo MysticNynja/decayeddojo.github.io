@@ -1,26 +1,29 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { client } from '~tina/__generated__/client';
-import { Blog } from '~tina/__generated__/types';
-import { tinaField } from 'tinacms/dist/react';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { client } from "../../tina/__generated__/client";
+import { tinaField } from "tinacms/dist/react";
+import { Blog, BlogConnectionQuery } from "../../tina/__generated__/types";
 
 const BlogPage = () => {
-  const [posts, setPosts] = useState<Blog[]>([]);
+  const [posts, setPosts] = useState<(Blog)[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
       try {
-        const response = await client.queries.blogConnection();
-        const postData = response.data.blogConnection.edges?.map((edge) => edge?.node) || [];
-
-        // Filter out null posts and sort by date in descending order
-        const sortedPosts = postData
-          .filter((p): p is Blog => !!p)
-          .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-        setPosts(sortedPosts);
+        const response: { data: BlogConnectionQuery } =
+          await client.queries.blogConnection();
+        const postData =
+          response.data.blogConnection.edges
+            ?.map((edge) => edge?.node)
+            .filter((p): p is Blog => !!p) || [];
+        // Sort posts by date in descending order
+        postData.sort(
+          (a, b) =>
+            new Date(b.date).getTime() - new Date(a.date).getTime()
+        );
+        setPosts(postData);
       } catch (error) {
         console.error("Error fetching posts:", error);
       } finally {
@@ -42,13 +45,26 @@ const BlogPage = () => {
         {posts.length > 0 ? (
           posts.map((post) => (
             <div key={post._sys.filename} data-tina-field={tinaField(post)}>
-              <Link to={`/blog/${post._sys.filename}`}>
-                <h2 data-tina-field={tinaField(post, 'title')} className="text-3xl font-bold text-yellow-300 hover:text-yellow-400 transition-colors duration-300">
+              <Link to={`/blog/${post._sys.filename.replace('.mdx', '')}`}>
+                <h2
+                  data-tina-field={tinaField(post, "title")}
+                  className="text-3xl font-bold text-yellow-300 hover:text-yellow-400 transition-colors duration-300"
+                >
                   {post.title}
                 </h2>
               </Link>
               <p className="text-gray-400 mt-2">
-                <span data-tina-field={tinaField(post, 'author')}>By {post.author}</span> | <span data-tina-field={tinaField(post, 'date')}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                <span data-tina-field={tinaField(post, "author")}>
+                  By {post.author}
+                </span>{" "}
+                |{" "}
+                <span data-tina-field={tinaField(post, "date")}>
+                  {new Date(post.date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
               </p>
             </div>
           ))

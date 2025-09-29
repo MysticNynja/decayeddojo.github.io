@@ -1,4 +1,4 @@
-fragment BlogParts on Blog {
+fragment PostParts on Post {
   __typename
   title
   author

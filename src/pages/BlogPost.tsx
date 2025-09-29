@@ -1,25 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { client } from '~tina/__generated__/client';
-import { Blog } from '~tina/__generated__/types';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { tinaField } from 'tinacms/dist/react';
+import { Blog, BlogQuery } from '../../tina/__generated__/types';
 
 const components = {
-  Heading: (props: any) => <h2 className="text-3xl font-bold my-4 text-yellow-300">{props.h}</h2>,
-  TextBlock: (props: any) => <p className="text-lg my-4">{props.text}</p>,
-  Blockquote: (props: any) => (
-    <blockquote className="border-l-4 border-yellow-400 pl-4 my-4">
-      <div className="prose prose-invert">
-        <TinaMarkdown content={props.children} />
-      </div>
-      {props.author && <cite className="block text-right mt-2 not-italic text-gray-400">- {props.author}</cite>}
-    </blockquote>
+  // eslint-disable-next-line
+  h1: (props: any) => <h1 className="text-4xl font-bold my-4" {...props} />,
+  // eslint-disable-next-line
+  h2: (props: any) => <h2 className="text-3xl font-bold my-4" {...props} />,
+  // eslint-disable-next-line
+  h3: (props: any) => <h3 className="text-2xl font-bold my-4" {...props} />,
+  p: (props: any) => <p className="text-lg my-4" {...props} />,
+  // eslint-disable-next-line
+  blockquote: (props: any) => <blockquote className="border-l-4 border-gray-500 pl-4 italic" {...props} />,
+  // eslint-disable-next-line
+  code: (props: any) => <code className="bg-gray-200 p-1 rounded-md" {...props} />,
+  // eslint-disable-next-line
+  pre: (props: any) => <pre className="bg-gray-200 p-4 rounded-md overflow-x-auto"><code {...props} /></pre>,
+  ul: (props: any) => <ul className="list-disc list-inside" {...props} />,
+  ol: (props: any) => <ol className="list-decimal list-inside" {...props} />,
+  li: (props: any) => <li className="mb-2" {...props} />,
+  a: (props: any) => <a className="text-blue-500 hover:underline" {...props} />,
+  img: (props: any) => (
+    <img src={props.url} alt={props.alt} className="my-4 rounded-lg" />
   ),
   Image: (props: any) => (
     <img src={props.src} alt={props.alt} className="my-4 rounded-lg" />
   ),
-  p: (props: any) => <p className="text-lg my-4">{props.children}</p>,
+  TextBlock: (props: any) => <p className="text-lg my-4">{props.text}</p>,
 };
 
 const BlogPost = () => {
@@ -32,7 +42,7 @@ const BlogPost = () => {
       if (slug) {
         setLoading(true);
         try {
-          const response = await client.queries.blog({
+          const response: { data: BlogQuery } = await client.queries.blog({
             relativePath: `${slug}.mdx`,
           });
           setPost(response.data.blog);
